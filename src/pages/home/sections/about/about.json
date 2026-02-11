@@ -5,20 +5,20 @@
       "variant": "small",
       "layout": { "type": "group", "side": "left", "id": "text" },
       "skills": [
-        { "name": "TypeScript", "icon": "TbBrandTypescript" },
-        { "name": "React", "icon": "TbBrandReact" },
-        { "name": "React Native", "icon": "TbBrandReactNative" }
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "React", "icon": "react" },
+        { "name": "React Native", "icon": "react-native" }
       ]
     },
     {
       "title": "UI & Styling",
       "variant": "white",
       "skills": [
-        { "name": "CSS", "icon": "TbBrandCss3" },
-        { "name": "ShadCn", "icon": "ShadCn" },
-        { "name": "Mantine", "icon": "SiMantine" },
-        { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
-        { "name": "Framer Motion", "icon": "TbBrandFramerMotion" }
+        { "name": "CSS", "icon": "css" },
+        { "name": "ShadCn", "icon": "shadcn" },
+        { "name": "Mantine", "icon": "mantine" },
+        { "name": "Tailwind CSS", "icon": "tailwind" },
+        { "name": "Framer Motion", "icon": "framer-motion" }
       ]
     },
     {
@@ -26,10 +26,10 @@
       "variant": "small",
       "layout": { "type": "group", "side": "right", "id": "git" },
       "skills": [
-        { "name": "Node", "icon": "FaNodeJs" },
-        { "name": "Prisma", "icon": "SiPrisma" },
-        { "name": "Drizzle", "icon": "Drizzle" },
-        { "name": "Express", "icon": "SiExpress" }
+        { "name": "Node", "icon": "node" },
+        { "name": "Prisma", "icon": "prisma" },
+        { "name": "Drizzle", "icon": "drizzle" },
+        { "name": "Express", "icon": "express" }
       ]
     },
 
@@ -37,9 +37,9 @@
       "title": "Database & Caching",
       "variant": "default",
       "skills": [
-        { "name": "PostgreSQL", "icon": "SiPostgresql" },
-        { "name": "MongoDB", "icon": "SiMongodb" },
-        { "name": "Redis", "icon": "SiRedis" }
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "Redis", "icon": "redis" }
       ]
     },
 
@@ -48,11 +48,11 @@
       "variant": "small",
       "layout": { "type": "group", "side": "left", "id": "in" },
       "skills": [
-        { "name": "Nginx", "icon": "SiNginx" },
-        { "name": "Docker", "icon": "SiDocker" },
-        { "name": "CI/CD", "icon": "SiGithubactions" },
+        { "name": "Nginx", "icon": "nginx" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "CI/CD", "icon": "git-actions" },
         { "name": "pm2", "icon": "pm2" },
-        { "name": "TurboRepo", "icon": "SiTurborepo" }
+        { "name": "TurboRepo", "icon": "turborepo" }
       ]
     }
   ],

@@ -2,7 +2,7 @@ import { Box, Button, Group, Stack, Text, Title, Modal } from "@mantine/core";
 import styles from "./details.module.css";
 import LinkButton from "@/shared/components/link-button";
 import { TbBrandGithubFilled } from "react-icons/tb";
-import { tileIcons } from "./icons";
+import { icons } from "@/shared/icons";
 import { IoImages } from "react-icons/io5";
 import { Image } from "@mantine/core";
 import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";
@@ -35,10 +35,10 @@ const Details: React.FC<DetailsProps> = ({ project, index }) => {
           </Title>
           <Group>
             {project.tiles.map((tile, index) => {
-              const Icon = tileIcons[tile];
+              const Icon = icons[tile.id];
               return (
                 <Text key={index} className={styles.tile}>
-                  {Icon && <Icon />} {tile}
+                  {Icon && <Icon />} {tile.name}
                 </Text>
               );
             })}

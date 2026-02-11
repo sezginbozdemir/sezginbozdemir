@@ -7,9 +7,11 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import ProjectCarousel from "./components/project-carousel";
 
+type Tile = { id: string; name: string };
+
 export interface Project {
   name: string;
-  tiles: string[];
+  tiles: Tile[];
   descriptions: string[];
   url: string;
   images: string[];

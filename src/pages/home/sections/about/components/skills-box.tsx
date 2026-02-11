@@ -1,6 +1,6 @@
 import { Group, Stack, Title } from "@mantine/core";
 import styles from "../about.module.css";
-import { iconMap } from "../icons";
+import { icons } from "@/shared/icons";
 import { Tab, TabVariant } from "../types";
 
 interface Params {
@@ -24,11 +24,15 @@ export const SkillsTab = ({ tab, variant }: Params) => {
         {tab.title}
       </Title>
       <Group gap={10} className={textClass}>
-        {tab.skills.map((skill, index) => (
-          <span key={index} className={styles.skillItem}>
-            {iconMap[skill.icon]} {skill.name}
-          </span>
-        ))}
+        {tab.skills.map((skill, index) => {
+          const Icon = icons[skill.icon];
+
+          return (
+            <span key={index} className={styles.skillItem}>
+              <Icon /> {skill.name}
+            </span>
+          );
+        })}
       </Group>
     </Stack>
   );

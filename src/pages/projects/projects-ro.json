@@ -3,13 +3,13 @@
     {
       "name": "Snoya – Headless Shopify Storefront",
       "tiles": [
-        "Remix",
-        "React",
-        "Shadcn",
-        "TypeScript",
-        "Zustand",
-        "TailwindCSS",
-        "Shopify"
+        { "name": "Remix", "id": "remix" },
+        { "name": "React", "id": "react" },
+        { "name": "Shadcn", "id": "shadcn" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Zustand", "id": "zustand" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Shopify", "id": "shopify" }
       ],
       "descriptions": [
         "Snoya este o aplicație e-commerce headless complet personalizabilă, construită cu Remix, React și TypeScript. Folosește Shopify ca backend pentru gestionarea clienților, produselor, coșului și checkout-ului, în timp ce frontend-ul este complet personalizat și găzduit independent (necesită hosting extern în afara Shopify).",
@@ -35,7 +35,10 @@
     },
     {
       "name": "Medical Dispencer UI",
-      "tiles": ["Javascript", "CSS"],
+      "tiles": [
+        { "name": "Javascript", "id": "javascript" },
+        { "name": "CSS", "id": "css" }
+      ],
       "descriptions": [
         "Interfata usoara si accesibila pentru un distribuitor medical care ruleaza pe un single board computer. Proiectul include un design clar cu butoane mari usor de folosit pe touch. Optimizata pentru consum redus de resurse si functionare fiabila chiar si offline."
       ],
@@ -51,12 +54,12 @@
     {
       "name": "Guided Tours",
       "tiles": [
-        "Next.js",
-        "React",
-        "Mantine",
-        "TypeScript",
-        "Node.js",
-        "Prisma"
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Node.js", "id": "node" },
+        { "name": "Prisma", "id": "prisma" }
       ],
       "descriptions": [
         "O aplicație web full-stack construită cu Node.js, React și Prisma. Permite administratorilor să creeze și să gestioneze tururi ghidate printr-un panou de control personalizat și puternic.",
@@ -76,7 +79,13 @@
 
     {
       "name": "Econos",
-      "tiles": ["Next.js", "React", "Mantine", "TypeScript", "PostCSS"],
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "PostCSS", "id": "postcss" }
+      ],
       "descriptions": [
         "O aplicație web de înaltă performanță destinată clienților, construită cu Next.js și React, stilizată folosind Mantine și PostCSS pentru o experiență modernă și fluidă a utilizatorului.",
         "O aplicație complet responsivă pentru clienți, cu animații CSS fluide pentru o experiență captivantă a utilizatorului."
@@ -97,7 +106,13 @@
     },
     {
       "name": "Vps",
-      "tiles": ["Vite", "React", "Mantine", "TypeScript", "PostCSS"],
+      "tiles": [
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "PostCSS", "id": "postcss" }
+      ],
       "descriptions": [
         "O aplicație React alimentată de Vite, folosind Mantine pentru componentele UI și stilizată cu PostCSS și TypeScript pentru o experiență de dezvoltare îmbunătățită.",
         "Optimizată pentru construiri rapide, oferă o interfață modernă și responsivă cu hooks din Mantine și rutare fluidă prin React Router."
@@ -114,7 +129,13 @@
     },
     {
       "name": "Pixado",
-      "tiles": ["Vite", "React", "TypeScript", "Bootstrap", "Framer Motion"],
+      "tiles": [
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Bootstrap", "id": "bootstrap" },
+        { "name": "Framer Motion", "id": "framer-motion" }
+      ],
       "descriptions": [
         "O aplicație rapidă și responsivă bazată pe Vite și React, folosind TypeScript, Bootstrap și Framer Motion pentru animații fluide.",
         "Pixado este o aplicație Vite de înaltă performanță bazată pe React, care utilizează TypeScript pentru siguranța tipurilor, Bootstrap pentru stilizare și Framer Motion pentru animații fluide. Proiectată pentru viteză și răspuns rapid, oferă o experiență modernă și dinamică a utilizatorului."
@@ -134,11 +155,11 @@
     {
       "name": "Nova Lens",
       "tiles": [
-        "Next.js",
-        "Medusa Js",
-        "TailwindCSS",
-        "TypeScript",
-        "Turborepo"
+        { "name": "Next.js", "id": "next" },
+        { "name": "Medusa Js", "id": "medusa" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Turborepo", "id": "turborepo" }
       ],
       "descriptions": [
         "O aplicație monorepo de comerț electronic construită cu Medusa, Next.js și TailwindCSS, având un dashboard personalizabil, un magazin online și un server, împreună cu un plugin de listă de dorințe pentru o experiență îmbunătățită a utilizatorului.",
@@ -162,14 +183,14 @@
     {
       "name": "Vessa Hospital",
       "tiles": [
-        "Next.js",
-        "React",
-        "JWT Authentication",
-        "Leaflet",
-        "TailwindCSS",
-        "Nodemailer",
-        "Google Maps",
-        "Swiper"
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "JWT Authentication", "id": "jwt" },
+        { "name": "Leaflet", "id": "leaflet" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Nodemailer", "id": "nodemailer" },
+        { "name": "Google Maps", "id": "maps" },
+        { "name": "Swiper", "id": "swiper" }
       ],
       "descriptions": [
         "O aplicație Next.js cu Google Maps, autentificare JWT, integrare prin Nodemailer pentru emailuri și un design curat și responsiv folosind TailwindCSS.",
@@ -191,13 +212,13 @@
     {
       "name": "Inventory Solutions",
       "tiles": [
-        "Vite",
-        "React",
-        "Mantine",
-        "TailwindCSS",
-        "Node.js",
-        "Express",
-        "MongoDB"
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Node.js", "id": "nodejs" },
+        { "name": "Express", "id": "express" },
+        { "name": "MongoDB", "id": "mongodb" }
       ],
       "descriptions": [
         "O aplicație full-stack cu un frontend React bazat pe Vite folosind Mantine și TailwindCSS și un backend Express cu MongoDB.",
@@ -218,11 +239,8 @@
     {
       "name": "Product Comparison",
       "tiles": [
-        "React",
-        "Bootstrap",
-        "CSV Parsing",
-        "Affiliate Site",
-        "Product Comparison"
+        { "name": "React", "id": "react" },
+        { "name": "Bootstrap", "id": "react-bootstrap" }
       ],
       "descriptions": [
         "Un site afiliat alimentat de React care preia produsele din fișiere CSV și oferă o experiență intuitivă de comparare a produselor.",

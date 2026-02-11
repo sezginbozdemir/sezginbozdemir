@@ -3,13 +3,13 @@
     {
       "name": "Snoya – Custom Headless Shopify Storefront",
       "tiles": [
-        "Remix",
-        "React",
-        "Shadcn",
-        "TypeScript",
-        "Zustand",
-        "TailwindCSS",
-        "Shopify"
+        { "name": "Remix", "id": "remix" },
+        { "name": "React", "id": "react" },
+        { "name": "Shadcn", "id": "shadcn" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Zustand", "id": "zustand" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Shopify", "id": "shopify" }
       ],
       "descriptions": [
         "Snoya is a fully customizable, headless e-commerce application built with Remix, React, and TypeScript. It uses Shopify as the backend for customers product, cart, and checkout management, while the frontend is entirely custom and deployed independently (requires external hosting outside Shopify).",
@@ -36,7 +36,10 @@
     },
     {
       "name": "Medical Dispencer UI",
-      "tiles": ["Javascript", "CSS"],
+      "tiles": [
+        { "name": "Javascript", "id": "javascript" },
+        { "name": "CSS", "id": "css" }
+      ],
       "descriptions": [
         "A lightweight user interface designed for a medical dispenser running on a single board computer. The project focuses on a clear and accessible layout with large touch-friendly controls. Optimized for low resource usage and reliable offline operation."
       ],
@@ -53,12 +56,12 @@
     {
       "name": "Guided Tours – Admin Managed Tour Platform",
       "tiles": [
-        "Next.js",
-        "React",
-        "Mantine",
-        "TypeScript",
-        "Node.js",
-        "Prisma"
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Node.js", "id": "node" },
+        { "name": "Prisma", "id": "prisma" }
       ],
       "descriptions": [
         "A full-stack web application powered by Node.js, React, and Prisma. It allows admins to create and manage guided tours through a powerful custom dashboard.",
@@ -78,7 +81,13 @@
     },
     {
       "name": "Econos – High-Performance Customer Web App",
-      "tiles": ["Next.js", "React", "Mantine", "TypeScript", "PostCSS"],
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "PostCSS", "id": "postcss" }
+      ],
       "descriptions": [
         "A high-performance customer-facing web application built with Next.js and React, styled using Mantine and PostCSS for a modern and seamless user experience.",
         "A fully responsive customer app with smooth CSS animations for an engaging user experience."
@@ -99,7 +108,13 @@
     },
     {
       "name": "VPS – Lightweight React App",
-      "tiles": ["Vite", "React", "Mantine", "TypeScript", "PostCSS"],
+      "tiles": [
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "PostCSS", "id": "postcss" }
+      ],
       "descriptions": [
         "A Vite-powered React app using Mantine for UI components and styled with PostCSS and TypeScript for improved development experience.",
         "Optimized for fast builds, it offers a modern and responsive interface with hooks from Mantine and smooth routing via React Router."
@@ -116,7 +131,13 @@
     },
     {
       "name": "Pixado – Fast Animated UI Showcase",
-      "tiles": ["Vite", "React", "TypeScript", "Bootstrap", "Framer Motion"],
+      "tiles": [
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Bootstrap", "id": "bootstrap" },
+        { "name": "Framer Motion", "id": "framer-motion" }
+      ],
       "descriptions": [
         "A fast and responsive Vite-powered React app using TypeScript, Bootstrap, and Framer Motion for smooth animations.",
         "Pixado is a high-performance Vite-based React application, leveraging TypeScript for type safety, Bootstrap for styling, and Framer Motion for seamless animations. Designed for speed and responsiveness, it delivers a modern and dynamic user experience."
@@ -136,11 +157,11 @@
     {
       "name": "Nova Lens – E-commerce Monorepo with Medusa",
       "tiles": [
-        "Next.js",
-        "Medusa Js",
-        "TailwindCSS",
-        "TypeScript",
-        "Turborepo"
+        { "name": "Next.js", "id": "next" },
+        { "name": "Medusa Js", "id": "medusa" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Turborepo", "id": "turborepo" }
       ],
       "descriptions": [
         "A monorepo e-commerce application built with Medusa, Next.js, and TailwindCSS, featuring a customizable dashboard, storefront, and server, along with a wishlist plugin for enhanced user experience.",
@@ -164,14 +185,14 @@
     {
       "name": "Vessa Hospital – Medical Services Portal",
       "tiles": [
-        "Next.js",
-        "React",
-        "JWT Authentication",
-        "Leaflet",
-        "TailwindCSS",
-        "Nodemailer",
-        "Google Maps",
-        "Swiper"
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "JWT Authentication", "id": "jwt" },
+        { "name": "Leaflet", "id": "leaflet" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Nodemailer", "id": "nodemailer" },
+        { "name": "Google Maps", "id": "maps" },
+        { "name": "Swiper", "id": "swiper" }
       ],
 
       "descriptions": [
@@ -194,13 +215,13 @@
     {
       "name": "Inventory Solutions – Full-Stack Inventory Dashboard",
       "tiles": [
-        "Vite",
-        "React",
-        "Mantine",
-        "TailwindCSS",
-        "Node.js",
-        "Express",
-        "MongoDB"
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Node.js", "id": "nodejs" },
+        { "name": "Express", "id": "express" },
+        { "name": "MongoDB", "id": "mongodb" }
       ],
       "descriptions": [
         "A full-stack application with a Vite-powered React frontend using Mantine and TailwindCSS, and an Express backend with MongoDB.",
@@ -221,11 +242,8 @@
     {
       "name": "Product Comparison – CSV-Based Affiliate Catalog ",
       "tiles": [
-        "React",
-        "Bootstrap",
-        "CSV Parsing",
-        "Affiliate Site",
-        "Product Comparison"
+        { "name": "React", "id": "react" },
+        { "name": "Bootstrap", "id": "bootstrap" }
       ],
       "descriptions": [
         "A React-powered affiliate site that fetches products from CSV files and provides an intuitive product comparison experience.",

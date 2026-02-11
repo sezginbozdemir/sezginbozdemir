@@ -35,7 +35,7 @@ const LinksSection = () => {
       </Group>
       <Button
         component="a"
-        href="mailto:bozdemirsezgin@proton.me"
+        href="mailto:sezdev@proton.me"
         className={styles.Button}
         variant="outline"
         radius="xl"

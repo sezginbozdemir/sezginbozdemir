@@ -1,0 +1,39 @@
+.Title {
+  color: var(--white);
+  font-weight: 400;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.stackTitle {
+  font-weight: 400;
+  color: var(--white);
+}
+.stack:hover {
+  opacity: 0.7;
+}
+.float {
+  position: absolute;
+  top: -10rem;
+  right: -10rem;
+  width: 300px;
+  height: 300px;
+  border: 2px solid var(--dark-gray);
+  border-radius: 50%;
+}
+.mobileMenu {
+  height: 30vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--black);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px 0px;
+  z-index: 1500;
+  border: 1px solid var(--dark-gray);
+  border-radius: 20px;
+  margin: 4rem 0.5rem 0 0.5rem;
+}

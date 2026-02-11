@@ -1,0 +1,107 @@
+.mainGroup {
+  border-top: 1px solid var(--dark-gray);
+  padding-top: 1rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.linkGroup {
+  border-top: 1px solid var(--dark-gray);
+  padding-top: 1rem;
+}
+
+.Title {
+  font-weight: 600;
+  color: #f5f5f5;
+  line-height: 6rem;
+  cursor: url("/black-cursor.png"), auto;
+  font-size: 6.5rem;
+  @media (max-width: 1024px) {
+    font-size: 4rem;
+    line-height: 2rem;
+  }
+}
+.Text {
+  font-weight: 400;
+  color: var(--light-gray);
+}
+.stack {
+  flex: 8;
+  position: relative;
+  @media (max-width: 1024px) {
+    flex: 6;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.contact {
+  flex: 4;
+  color: var(--white);
+  @media (max-width: 1024px) {
+    flex: 6;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.hidden {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.equal {
+  flex: 1;
+}
+.Link:hover {
+  opacity: 0.7;
+}
+.roundedStack {
+  border: 1px solid var(--dark-gray);
+  border-radius: 40px;
+  height: 100%;
+  padding: 2rem;
+}
+.site {
+  color: var(--light-gray);
+  font-weight: 450;
+}
+.Button {
+  border-color: var(--dark-gray);
+  &:hover {
+    box-shadow: none;
+  }
+  &:active {
+    box-shadow: none;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.LinkText {
+  font-weight: 300;
+  color: var(--light-gray);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.full {
+  flex: 4;
+}
+.lastname {
+  flex: 8;
+}
+
+.float {
+  position: absolute;
+  top: 6rem;
+  left: -5rem;
+  width: 800px;
+  height: 800px;
+  border: 2px solid var(--dark-gray);
+  border-radius: 50%;
+}

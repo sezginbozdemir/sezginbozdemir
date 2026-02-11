@@ -16,6 +16,12 @@ export default defineConfig({
       logStats: true,
     }),
   ],
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+  },
+
   preview: {
     allowedHosts: ["sezdev.com", "localhost", "127.0.0.1"],
   },

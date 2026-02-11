@@ -11,6 +11,17 @@
   --dark-gray: #3d3d3d;
   --light-gray: #a6a6a6;
 }
+#root {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+  width: 100%;
+  background-color: var(--black);
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;

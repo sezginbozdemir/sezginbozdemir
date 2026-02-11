@@ -1,6 +1,7 @@
 import { Box, Group, Image, Stack, Title } from "@mantine/core";
 import styles from "../about.module.css";
 import { TbBrandGithubFilled } from "react-icons/tb";
+import { FaLinkedinIn } from "react-icons/fa6";
 import raw from "../about.json";
 import LinkButton from "@/shared/components/link-button";
 import sez from "@/assets/images/sez.png";
@@ -16,6 +17,9 @@ const AboutContent = () => {
     switch (id) {
       case "git":
         return <LinkButton url={data.githubUrl} icon={TbBrandGithubFilled} />;
+      case "in":
+        return <LinkButton url={data.linkedInUrl} icon={FaLinkedinIn} />;
+
       case "text":
         return (
           <Box className={styles.gitLink}>

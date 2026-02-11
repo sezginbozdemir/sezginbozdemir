@@ -7,14 +7,30 @@
       "end": "2023",
       "duration": "5 ani",
       "company": "Emr Engros",
-      "role": "Online Store Manager"
+      "role": "Online Store Manager",
+      "list": [
+        "Am gestionat activitățile zilnice ale site-ului de e-commerce, asigurând listări corecte ale produselor și actualizări ale site-ului.",
+        "Am creat și menținut catalogul de produse: am adăugat produse noi, descrieri, imagini, prețuri, categorii și variante.",
+        "Am monitorizat și actualizat stocurile și am coordonat disponibilitatea pentru a preveni vânzarea peste stoc.",
+        "Am planificat, lansat și optimizat campanii Google Ads (Search/Shopping/Display).",
+        "Am planificat, lansat și optimizat campanii Meta Ads (Facebook), inclusiv targetare și retargetare a audiențelor.",
+        "Am realizat materiale creative pentru marketing (bannere/vizualuri pentru reclame) pentru campanii și promoții online.",
+        "Am coordonat promoții pe site, campanii sezoniere și lansări de produse."
+      ]
     },
     {
       "start": "2023",
       "end": "2025",
       "duration": "2 ani",
       "company": "Pixado",
-      "role": "Junior Web Developer"
+      "role": "Junior Web Developer",
+      "list": [
+        "Am transformat design-uri din Figma în pagini web folosind React și Next.js cu TypeScript.",
+        "Am construit și menținut funcționalități back-end folosind Node.js (Express).",
+        "Am integrat partea de front-end cu API-uri și am gestionat fluxul de date între client și server.",
+        "Am lucrat cu baze de date (PostgreSQL/MongoDB).",
+        "Am folosit Git pentru controlul versiunilor."
+      ]
     }
   ]
 }

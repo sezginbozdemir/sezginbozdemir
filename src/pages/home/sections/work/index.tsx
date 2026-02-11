@@ -1,7 +1,8 @@
-import { Box, Group, Stack, Text, Title } from "@mantine/core";
+import { Box, Group, Stack, Text, Title, Accordion, List } from "@mantine/core";
 import styles from "./work.module.css";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import { FaCircle } from "react-icons/fa6";
 
 const WorkSection = () => {
   const { i18n } = useTranslation();
@@ -30,26 +31,50 @@ const WorkSection = () => {
         <Text className={styles.header}>Work</Text>
       </Box>
 
-      <Box className={styles.workBox}>
+      <Accordion className={styles.workBox}>
         {workData.experience.map((job: any, index: number) => (
-          <Group key={index} className={styles.workGroup}>
-            <Group className={styles.innerGroup}>
-              <Stack className={styles.timeStack}>
-                <Title order={4} className={styles.time}>
-                  {job.start} - {job.end}
-                </Title>
-                <Title order={6} className={styles.range}>
-                  {job.duration}
-                </Title>
-              </Stack>
-              <Title order={4} className={styles.company}>
-                {job.company}
-              </Title>
-            </Group>
-            <Text className={styles.stack}>{job.role}</Text>
-          </Group>
+          <Accordion.Item
+            key={index}
+            value={job.company}
+            className={styles.accordionItem}
+          >
+            <Accordion.Control className={styles.workGroup}>
+              <Group>
+                <Group className={styles.innerGroup}>
+                  <Stack className={styles.timeStack}>
+                    <Title order={4} className={styles.time}>
+                      {job.start} - {job.end}
+                    </Title>
+                    <Title order={6} className={styles.range}>
+                      {job.duration}
+                    </Title>
+                  </Stack>
+                  <Title order={4} className={styles.company}>
+                    {job.company}
+                  </Title>
+                </Group>
+                <Text className={styles.stack}>{job.role}</Text>
+              </Group>
+            </Accordion.Control>
+            <Accordion.Panel>
+              <List
+                spacing="sm"
+                py={10}
+                icon={<FaCircle size={6} color="white" />}
+              >
+                {job.list.map((item: string, i: number) => (
+                  <List.Item key={i}>
+                    <Title order={4} className={styles.desc}>
+                      {item}
+                    </Title>
+                  </List.Item>
+                ))}
+              </List>
+            </Accordion.Panel>
+          </Accordion.Item>
         ))}
-      </Box>
+      </Accordion>
+
       <Box className={styles.headerBox}>
         <Stack my={20} gap={0}>
           <Title className={styles.time} order={5}>

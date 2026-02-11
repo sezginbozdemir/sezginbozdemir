@@ -11,11 +11,14 @@
     cursor: url("black-cursor.png"), auto;
   }
 }
+.accordionItem {
+  border: 0;
+}
 .workBox {
   border-top: 1px solid var(--dark-gray);
-  color: var(--white);
 }
 .workGroup {
+  color: var(--white);
   border-bottom: 1px solid var(--dark-gray);
   padding: 1rem 0rem;
   &:hover {
@@ -53,6 +56,10 @@
 .company {
   flex: 1;
   font-weight: 450;
+}
+.desc {
+  font-weight: 400;
+  color: var(--white);
 }
 .total {
   font-weight: 400;

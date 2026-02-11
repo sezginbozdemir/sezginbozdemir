@@ -7,14 +7,30 @@
       "end": "2023",
       "duration": "5 years",
       "company": "Emr Engros",
-      "role": "Online Store Manager"
+      "role": "Online Store Manager",
+      "list": [
+        "Managed day-to-day operations of the e-commerce website, ensuring accurate product listings and site updates.",
+        "Created and maintained product catalog: added new products, descriptions, images, pricing, categories, and variants.",
+        "Monitored and updated inventory/stock levels and coordinated availability to prevent overselling.",
+        "Planned, launched, and optimized Google Ads campaigns (Search/Shopping/Display).",
+        "Planned, launched, and optimized Meta Ads campaigns (Facebook), including audience targeting and retargeting.",
+        "Designed/produced marketing creatives (banners/ad visuals) for online campaigns and promotions.",
+        "Coordinated website promotions, seasonal campaigns and product launches."
+      ]
     },
     {
       "start": "2023",
       "end": "2025",
       "duration": "2 years",
       "company": "Pixado",
-      "role": "Junior Web Developer"
+      "role": "Junior Web Developer",
+      "list": [
+        "Converted Figma designs into web pages using React and Next.js with TypeScript.",
+        "Built and maintained back-end functionality using Node.js(Express).",
+        "Integrated front-end with APIs and handled data flow between client and server.",
+        "Worked with databases (PostgreSQL/MongoDB).",
+        "Used Git for version control."
+      ]
     }
   ]
 }

@@ -1,71 +1,61 @@
 {
   "sections": [
     {
-      "title": "Front-end",
-      "variant": "white",
+      "title": "Core",
+      "variant": "small",
+      "layout": { "type": "group", "side": "left", "id": "text" },
       "skills": [
         { "name": "TypeScript", "icon": "TbBrandTypescript" },
         { "name": "React", "icon": "TbBrandReact" },
-        { "name": "Context API", "icon": "TbApi" },
-        { "name": "Zustand", "icon": "" },
-        { "name": "Redux", "icon": "SiRedux" },
-        { "name": "Next.js", "icon": "SiNextdotjs" },
-        { "name": "Vite", "icon": "TbBrandVite" },
-        { "name": "Testing Library", "icon": "SiTestinglibrary" },
-        { "name": "Vitest", "icon": "SiVitest" },
-        { "name": "Jest", "icon": "SiJest" },
-        { "name": "GraphQL", "icon": "SiGraphql" },
-        { "name": "React Native", "icon": "TbBrandReactNative" },
-        { "name": "React Bootstrap", "icon": "SiReactbootstrap" },
-        { "name": "Medusa JS", "icon": "SiMedusa" },
-        { "name": "Shopify", "icon": "FaShopify" }
+        { "name": "React Native", "icon": "TbBrandReactNative" }
       ]
     },
     {
-      "title": "Styles",
-      "variant": "small",
-      "layout": { "type": "group", "side": "right", "id": "git" },
+      "title": "UI & Styling",
+      "variant": "white",
       "skills": [
         { "name": "CSS", "icon": "TbBrandCss3" },
-        { "name": "SASS", "icon": "FaSass" },
         { "name": "ShadCn", "icon": "ShadCn" },
         { "name": "Mantine", "icon": "SiMantine" },
-        { "name": "Bootstrap", "icon": "FaBootstrap" },
         { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
         { "name": "Framer Motion", "icon": "TbBrandFramerMotion" }
       ]
     },
     {
-      "title": "Back-end",
-      "variant": "full",
+      "title": "Back-end & APIs",
+      "variant": "small",
+      "layout": { "type": "group", "side": "right", "id": "git" },
+      "skills": [
+        { "name": "Node", "icon": "FaNodeJs" },
+        { "name": "Prisma", "icon": "SiPrisma" },
+        { "name": "Drizzle", "icon": "Drizzle" },
+        { "name": "Express", "icon": "SiExpress" }
+      ]
+    },
+
+    {
+      "title": "Database & Caching",
+      "variant": "default",
       "skills": [
         { "name": "PostgreSQL", "icon": "SiPostgresql" },
         { "name": "MongoDB", "icon": "SiMongodb" },
-        { "name": "Redis", "icon": "SiRedis" },
-        { "name": "Node", "icon": "FaNodeJs" },
-        { "name": "Prisma", "icon": "SiPrisma" },
-        { "name": "JWT", "icon": "SiJsonwebtokens" },
-        { "name": "REST", "icon": "SiRest" },
-        { "name": "Express", "icon": "SiExpress" },
-        { "name": "Drizzle", "icon": "Drizzle" },
-        { "name": "Supabase", "icon": "Supabase" }
+        { "name": "Redis", "icon": "SiRedis" }
       ]
     },
+
     {
       "title": "DevOps",
       "variant": "small",
-      "layout": { "type": "group", "side": "left", "id": "text" },
+      "layout": { "type": "group", "side": "left", "id": "in" },
       "skills": [
         { "name": "Nginx", "icon": "SiNginx" },
         { "name": "Docker", "icon": "SiDocker" },
         { "name": "CI/CD", "icon": "SiGithubactions" },
-        { "name": "yalc", "icon": "SiNpm" },
-        { "name": "yarn", "icon": "FaYarn" },
-        { "name": "npm", "icon": "SiNpm" },
         { "name": "pm2", "icon": "pm2" },
         { "name": "TurboRepo", "icon": "SiTurborepo" }
       ]
     }
   ],
-  "githubUrl": "https://github.com/sezginbozdemir"
+  "githubUrl": "https://github.com/sezginbozdemir",
+  "linkedInUrl": "https://www.linkedin.com/in/sezginbozdemir/"
 }

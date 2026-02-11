@@ -12,5 +12,6 @@ export type Section = {
 };
 export type AboutData = {
   githubUrl: string;
+  linkedInUrl: string;
   sections: Section[];
 };

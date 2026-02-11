@@ -58,7 +58,6 @@
 .whiteTab {
   background-color: var(--white);
   border-radius: 40px;
-  min-height: 10rem;
   height: 100%;
   padding: 1.5rem;
   gap: 0.5rem;
@@ -68,7 +67,6 @@
 .smallTab {
   background-color: transparent;
   border-radius: 40px;
-  min-height: 10rem;
   height: 100%;
   padding: 1.5rem;
   gap: 0.5rem;
@@ -78,7 +76,6 @@
 .tab {
   background-color: transparent;
   border-radius: 40px;
-  min-height: 10rem;
   height: 100%;
   padding: 1.5rem;
   gap: 0.5rem;

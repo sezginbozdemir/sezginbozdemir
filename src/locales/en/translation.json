@@ -1,10 +1,10 @@
 {
   "intro": {
-    "part1": "My focus is on",
-    "part2": "writing clean, maintainable,",
-    "part3": "readable code",
-    "part4": "that enhances the development experience.",
-    "part5": "I aim to create efficient, scalable solutions that not only meet the project’s needs but also ensure a smooth and enjoyable development journey."
+    "part1": "Building projects with",
+    "part2": "clean, readable code",
+    "part3": "and a",
+    "part4": "tidy structure.",
+    "part5": "Reusability and maintainability matter to me, and I like keeping things well-organized so new features and updates stay simple."
   },
   "nav": {
     "about": "About",

@@ -1,5 +1,3 @@
-# Sezgin Bozdemir
-
 Web Developer building and maintaining web applications with **TypeScript, React, and Node.js**.  
 Focused on practical solutions, clean architecture, and maintainable code.  
 Comfortable in a Linux-based dev environment.
@@ -9,8 +7,6 @@ Comfortable in a Linux-based dev environment.
 [![Email](https://img.shields.io/badge/Email-Contact-333333?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sezdev@proton.me)
 
 ---
-
-## Stack (quick view)
 
 **Core:**  
 ![TypeScript](https://img.shields.io/badge/TypeScript-333333?style=flat&logo=typescript)

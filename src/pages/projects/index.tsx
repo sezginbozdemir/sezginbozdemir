@@ -63,9 +63,11 @@ const Projects = () => {
               <Details project={project} index={index} />
               <ImageGallery index={index} project={project} />
             </Group>
+            {/*  
             <Group align="center" justify="center">
               <ProjectCarousel images={project.images} />
             </Group>
+			*/}
           </Stack>
         ))}
       </Stack>

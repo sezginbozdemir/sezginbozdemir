@@ -14,7 +14,7 @@ const LinkButton: React.FC<Props> = ({ url, icon: Icon }) => {
       <Box className={styles.gitBox}>
         <Icon color="var(--white)" size={28} />
       </Box>
-      <Link to={url} className={styles.linkBox}>
+      <Link target="_blank" to={url} className={styles.linkBox}>
         <BsArrowUpRight color="var(--black)" size={25} />
       </Link>
     </Group>

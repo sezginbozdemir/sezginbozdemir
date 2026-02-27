@@ -1,4 +1,5 @@
 import {
+  TbBrandGithubFilled,
   TbBrandReact,
   TbBrandCss3,
   TbBrandReactNative,
@@ -84,6 +85,7 @@ export const icons: Record<string, React.ElementType> = {
   nginx: SiNginx,
   docker: SiDocker,
   "git-actions": SiGithubactions,
+  github: TbBrandGithubFilled,
   prisma: SiPrisma,
   npm: SiNpm,
   yarn: FaYarn,

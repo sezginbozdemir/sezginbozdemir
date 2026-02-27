@@ -1,35 +1,43 @@
-import {
-  Group,
-  Text,
-  Box,
-  TextInput,
-  Textarea,
-  Button,
-  Title,
-  Container,
-} from "@mantine/core";
-import { ScrollTop } from "../../shared/hooks/scroll-to-top";
-import styles from "./contact.module.css";
+import { Group, Text, Box, Title, Container } from "@mantine/core";
+import { useScrollToTop } from "../../lib/hooks/useScrollToTop";
+import styles from "./styles.module.css";
 import { ChangeEvent, FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
+import PrimaryButton from "@/components/ui/primary-button";
+import PrimaryInput from "@/components/ui/text-input/text-input";
 interface FormData {
   name: string;
   email: string;
   subject: string;
   message: string;
 }
+
+const INITIAL_FORM: FormData = {
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+};
+
+const TEXT_FIELDS: {
+  name: keyof FormData;
+  type?: string;
+  multiline?: boolean;
+}[] = [
+  { name: "name", type: "text" },
+  { name: "email", type: "email" },
+  { name: "subject", type: "text" },
+  { name: "message", type: "text", multiline: true },
+];
+
 const Contact = () => {
+  useScrollToTop();
+
   const { t } = useTranslation();
-  ScrollTop();
   const [statusMessage, setStatusMessage] = useState<string>("");
   const [statusType, setStatusType] = useState<"success" | "error" | "">("");
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  const [formData, setFormData] = useState<FormData>(INITIAL_FORM);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -74,54 +82,22 @@ const Contact = () => {
         </Text>
         <Box className={styles.formBox}>
           <form onSubmit={handleSubmit}>
-            <TextInput
-              name="name"
-              label={t("contact.name")}
-              value={formData.name}
-              onChange={handleChange}
-              placeholder={t("contact.namePlaceholder")}
-              required
-              className={styles.inputField}
-              classNames={{ input: styles.input }}
-            />
-            <TextInput
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              label={t("contact.email")}
-              placeholder={t("contact.emailPlaceholder")}
-              required
-              type="email"
-              className={styles.inputField}
-              classNames={{ input: styles.input }}
-            />
-            <TextInput
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              label={t("contact.subject")}
-              placeholder={t("contact.subjectPlaceholder")}
-              required
-              type="subject"
-              className={styles.inputField}
-              classNames={{ input: styles.input }}
-            />
-            <Textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              label={t("contact.message")}
-              placeholder={t("contact.messagePlaceholder")}
-              required
-              minRows={4}
-              className={styles.inputField}
-              classNames={{ input: styles.inputArea }}
-            />
-            <Button px={50} type="submit" className={styles.button}>
+            {TEXT_FIELDS.map(({ name, type, multiline }) => (
+              <PrimaryInput
+                name={name}
+                type={type}
+                label={t(`contact.${name}`)}
+                value={formData[name]}
+                onChange={handleChange}
+                placeholder={t(`contact.${name}Placeholder`)}
+                multiline={multiline}
+              />
+            ))}
+            <PrimaryButton type="submit">
               <Title fw={400} order={5}>
                 {t("contact.submitButton")}
               </Title>
-            </Button>
+            </PrimaryButton>
             {statusMessage && (
               <Text
                 mt={30}

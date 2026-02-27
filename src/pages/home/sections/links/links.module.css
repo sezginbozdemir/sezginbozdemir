@@ -1,16 +1,3 @@
-.Button {
-  border-color: var(--dark-gray);
-  &:hover {
-    box-shadow: none;
-  }
-  &:active {
-    box-shadow: none;
-  }
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
-}
 .Text {
   font-weight: 300;
   color: var(--light-gray);

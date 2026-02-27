@@ -1,7 +1,7 @@
 import { Box, Group, Image } from "@mantine/core";
 import styles from "./image-gallery.module.css";
 import { FiLink } from "react-icons/fi";
-import LinkButton from "@/shared/components/link-button";
+import LinkButton from "@/components/ui/link-button";
 import { useMediaQuery } from "@mantine/hooks";
 import { Project } from "../..";
 

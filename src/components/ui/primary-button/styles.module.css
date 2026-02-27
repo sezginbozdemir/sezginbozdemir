@@ -1,0 +1,11 @@
+.primaryButton {
+  padding: 0 50px;
+  background-color: transparent;
+  border: 1px solid var(--light-gray);
+  border-radius: 100px;
+  color: var(--white);
+  &:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
+}

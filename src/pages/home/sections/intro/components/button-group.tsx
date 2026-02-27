@@ -1,9 +1,12 @@
 import styles from "../intro.module.css";
 import { Group, Button, Title } from "@mantine/core";
-import { FiDownload } from "react-icons/fi";
+import { socialIcons } from "@/components/icons";
+
+const DownloadIcon = socialIcons["download"];
 interface Props {
   hidden?: boolean;
 }
+const cv = { href: "/cv.pdf", download: "Sezgin_CV.pdf" };
 
 const ButtonGroup: React.FC<Props> = ({ hidden }) => {
   return (
@@ -13,8 +16,8 @@ const ButtonGroup: React.FC<Props> = ({ hidden }) => {
     >
       <Button
         component="a"
-        href="/cv.pdf"
-        download="Sezgin_CV.pdf"
+        href={cv.href}
+        download={cv.download}
         className={styles.Button}
         w={250}
         h={50}
@@ -27,14 +30,14 @@ const ButtonGroup: React.FC<Props> = ({ hidden }) => {
       </Button>
       <Button
         component="a"
-        href="/cv.pdf"
-        download="Sezgin_CV.pdf"
+        href={cv.href}
+        download={cv.download}
         className={styles.Button}
         h={55}
         variant="filled"
         radius="xl"
       >
-        <FiDownload color="var(--black)" size={20} />
+        <DownloadIcon color="var(--black)" size={20} />
       </Button>
     </Group>
   );

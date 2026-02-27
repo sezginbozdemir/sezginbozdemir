@@ -1,5 +1,5 @@
 import { Box, Group } from "@mantine/core";
-import styles from "./link-button.module.css";
+import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 import { BsArrowUpRight } from "react-icons/bs";
 

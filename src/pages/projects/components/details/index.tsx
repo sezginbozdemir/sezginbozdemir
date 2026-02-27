@@ -1,8 +1,8 @@
 import { Box, Button, Group, Stack, Text, Title, Modal } from "@mantine/core";
 import styles from "./details.module.css";
-import LinkButton from "@/shared/components/link-button";
 import { TbBrandGithubFilled } from "react-icons/tb";
-import { icons } from "@/shared/icons";
+import { icons } from "@/components/icons";
+import LinkButton from "@/components/ui/link-button";
 import { IoImages } from "react-icons/io5";
 import { Image } from "@mantine/core";
 import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";

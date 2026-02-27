@@ -1,75 +1,55 @@
-import { Button, Group, Title } from "@mantine/core";
+import { Group, Title } from "@mantine/core";
 import styles from "./links.module.css";
-import { TbBrandGithubFilled } from "react-icons/tb";
-import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa6";
-import { MdAlternateEmail } from "react-icons/md";
+import IconButton from "@/components/ui/icon-button";
+import { FB_URL, GH_URL, IG_URL, LI_URL, MAIL } from "@/lib/constants";
+import { icons, socialIcons } from "@/components/icons";
+const GhIcon = icons["github"];
+const EmailIcon = socialIcons["email"];
+const LinkedinIcon = socialIcons["linkedin"];
+const FbIcon = socialIcons["facebook"];
+const IgIcon = socialIcons["instagram"];
+
+const links = {
+  x: [
+    { href: GH_URL, Icon: GhIcon },
+    { href: LI_URL, Icon: LinkedinIcon },
+  ],
+  y: { href: MAIL, Icon: EmailIcon },
+  z: [
+    { href: IG_URL, Icon: IgIcon },
+    { href: FB_URL, Icon: FbIcon },
+  ],
+};
 
 const LinksSection = () => {
   return (
     <Group className={styles.mainGroup} justify="space-around" mb={100} mt={50}>
       <Group>
-        <Button
-          component="a"
-          href="https://github.com/sezginbozdemir"
-          className={styles.Button}
-          variant="outline"
-          radius="xl"
-        >
-          <Title order={5} className={styles.Text}>
-            <TbBrandGithubFilled size={18} color="var(--white)" />
-            Github
-          </Title>
-        </Button>
-        <Button
-          component="a"
-          href="https://linkedin.com/in/sezginbozdemir"
-          className={styles.Button}
-          variant="outline"
-          radius="xl"
-        >
-          <Title order={5} className={styles.Text}>
-            <FaLinkedinIn size={18} color="var(--white)" />
-            LinkedIn
-          </Title>
-        </Button>
+        {links.x.map(({ href, Icon }) => (
+          <IconButton href={href}>
+            <Title order={5} className={styles.Text}>
+              <Icon size={18} color="var(--white)" />
+              Github
+            </Title>
+          </IconButton>
+        ))}
       </Group>
-      <Button
-        component="a"
-        href="mailto:sezdev@proton.me"
-        className={styles.Button}
-        variant="outline"
-        radius="xl"
-      >
+      <IconButton href={links.y.href}>
         <Title order={5} className={styles.Text}>
-          <MdAlternateEmail size={18} color="var(--white)" />
-          Email
+          <links.y.Icon size={18} color="var(--white)" />
+          Github
         </Title>
-      </Button>
+      </IconButton>
+
       <Group>
-        <Button
-          component="a"
-          href="https://www.instagram.com/sezginbozdemir/"
-          className={styles.Button}
-          variant="outline"
-          radius="xl"
-        >
-          <Title order={5} className={styles.Text}>
-            <FaInstagram size={18} color="var(--white)" />
-            Instagram
-          </Title>
-        </Button>
-        <Button
-          component="a"
-          href="https://www.facebook.com/SezginBozdemir/"
-          className={styles.Button}
-          variant="outline"
-          radius="xl"
-        >
-          <Title order={5} className={styles.Text}>
-            <FaFacebookF size={18} color="var(--white)" />
-            Facebook
-          </Title>
-        </Button>
+        {links.z.map(({ href, Icon }) => (
+          <IconButton href={href}>
+            <Title order={5} className={styles.Text}>
+              <Icon size={18} color="var(--white)" />
+              Github
+            </Title>
+          </IconButton>
+        ))}
       </Group>
     </Group>
   );

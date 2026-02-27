@@ -2,7 +2,7 @@ import { Box, Container, Group, Stack, Text } from "@mantine/core";
 import styles from "./projects.module.css";
 import Details from "./components/details";
 import ImageGallery from "./components/image-gallery";
-import { ScrollTop } from "@/shared/hooks/scroll-to-top";
+import { useScrollToTop } from "@/lib/hooks/useScrollToTop";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import ProjectCarousel from "./components/project-carousel";
@@ -25,7 +25,7 @@ export interface ProjectData {
 }
 
 const Projects = () => {
-  ScrollTop();
+  useScrollToTop();
 
   const { t } = useTranslation();
   const { i18n } = useTranslation();
@@ -36,10 +36,10 @@ const Projects = () => {
       const lang = i18n.language;
 
       if (lang === "ro") {
-        const projectsDataRo = await import("./projects-ro.json");
+        const projectsDataRo = await import("@/lib/data/projects-ro.json");
         setProjectsData(projectsDataRo.default);
       } else {
-        const projectsDataEn = await import("./projects-en.json");
+        const projectsDataEn = await import("@/lib/data/projects-en.json");
         setProjectsData(projectsDataEn.default);
       }
     };

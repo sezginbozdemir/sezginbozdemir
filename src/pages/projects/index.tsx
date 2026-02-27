@@ -5,7 +5,6 @@ import ImageGallery from "./components/image-gallery";
 import { useScrollToTop } from "@/lib/hooks/useScrollToTop";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
-import ProjectCarousel from "./components/project-carousel";
 
 type Tile = { id: string; name: string };
 

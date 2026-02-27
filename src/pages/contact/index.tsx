@@ -2,16 +2,10 @@ import { Group, Text, Box, Title, Container } from "@mantine/core";
 import { useScrollToTop } from "../../lib/hooks/useScrollToTop";
 import styles from "./styles.module.css";
 import { ChangeEvent, FormEvent, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 import PrimaryButton from "@/components/ui/primary-button";
 import PrimaryInput from "@/components/ui/text-input/text-input";
-interface FormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
+import { FormData, sendEmail } from "@/lib/emailjs";
 
 const INITIAL_FORM: FormData = {
   name: "",
@@ -50,19 +44,17 @@ const Contact = () => {
   };
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const missingFields = Object.entries(formData).some(
+      ([_key, value]) => !value || value === "",
+    );
 
-    emailjs
-      .send(
-        "service_26y0va8",
-        "template_seg40oc",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        "bbUkLejFT4lzzGXLQ",
-      )
+    if (missingFields) {
+      setStatusType("error");
+      setStatusMessage("Please fill in all required fields.");
+      return;
+    }
+
+    sendEmail(formData)
       .then(() => {
         setStatusMessage(t("contact.successMessage"));
         setStatusType("success");

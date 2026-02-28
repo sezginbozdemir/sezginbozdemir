@@ -25,9 +25,9 @@
   },
 
   "site": {
-    "line1": "Styled with Mantine /",
-    "line2": "Powered by Vite /",
-    "line3": "Built with TypeScript /"
+    "line1": "✓ Available for work",
+    "line2": "Based in Bucharest/Romania",
+    "line3": "sezdev@proton.me © 2026"
   },
   "projects": {
     "breadcrumb": ".../Projects"
@@ -44,6 +44,7 @@
     "messagePlaceholder": "Your message",
     "submitButton": "Submit",
     "successMessage": "Message sent successfully!",
-    "errorMessage": "Failed to send message. Please try again."
+    "errorMessage": "Failed to send message. Please try again.",
+    "validationError": "Please fill in all required fields."
   }
 }

@@ -4,8 +4,7 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn } from "react-icons/fa6";
 import LinkButton from "@/components/ui/link-button";
 import raw from "@/lib/data/about.json";
-//@ts-ignore
-import sez from "@/assets/images/sez.png?w=400&h=500&format=webp";
+import sez from "@/assets/images/sez.png";
 import { useTranslation } from "react-i18next";
 import { SkillsSection } from "./skills-section";
 import { AboutData, Section } from "../types";

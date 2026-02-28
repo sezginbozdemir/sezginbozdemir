@@ -50,7 +50,7 @@ const Contact = () => {
 
     if (missingFields) {
       setStatusType("error");
-      setStatusMessage("Please fill in all required fields.");
+      setStatusMessage(t("contact.validationError"));
       return;
     }
 
@@ -76,6 +76,7 @@ const Contact = () => {
           <form onSubmit={handleSubmit}>
             {TEXT_FIELDS.map(({ name, type, multiline }) => (
               <PrimaryInput
+                required
                 name={name}
                 type={type}
                 label={t(`contact.${name}`)}

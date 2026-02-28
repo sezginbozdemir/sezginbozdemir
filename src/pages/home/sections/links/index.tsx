@@ -11,13 +11,13 @@ const IgIcon = socialIcons["instagram"];
 
 const links = {
   x: [
-    { href: GH_URL, Icon: GhIcon },
-    { href: LI_URL, Icon: LinkedinIcon },
+    { href: GH_URL, Icon: GhIcon, name: "Github" },
+    { href: LI_URL, Icon: LinkedinIcon, name: "Linkedin" },
   ],
-  y: { href: MAIL, Icon: EmailIcon },
+  y: { href: MAIL, Icon: EmailIcon, name: "Email" },
   z: [
-    { href: IG_URL, Icon: IgIcon },
-    { href: FB_URL, Icon: FbIcon },
+    { href: IG_URL, Icon: IgIcon, name: "Instagram" },
+    { href: FB_URL, Icon: FbIcon, name: "Facebook" },
   ],
 };
 
@@ -25,11 +25,11 @@ const LinksSection = () => {
   return (
     <Group className={styles.mainGroup} justify="space-around" mb={100} mt={50}>
       <Group>
-        {links.x.map(({ href, Icon }) => (
+        {links.x.map(({ href, Icon, name }) => (
           <IconButton href={href}>
             <Title order={5} className={styles.Text}>
               <Icon size={18} color="var(--white)" />
-              Github
+              {name}
             </Title>
           </IconButton>
         ))}
@@ -37,16 +37,16 @@ const LinksSection = () => {
       <IconButton href={links.y.href}>
         <Title order={5} className={styles.Text}>
           <links.y.Icon size={18} color="var(--white)" />
-          Github
+          {links.y.name}
         </Title>
       </IconButton>
 
       <Group>
-        {links.z.map(({ href, Icon }) => (
+        {links.z.map(({ href, Icon, name }) => (
           <IconButton href={href}>
             <Title order={5} className={styles.Text}>
               <Icon size={18} color="var(--white)" />
-              Github
+              {name}
             </Title>
           </IconButton>
         ))}

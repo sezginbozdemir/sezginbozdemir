@@ -43,7 +43,6 @@ const Footer = () => {
             </Group>
           </Stack>
           <Stack style={{ zIndex: 1000 }} className={styles.contact}>
-            <Text> .../Contact</Text>
             <Group justify="space-around">
               {links.map((link, index) => (
                 <Link key={index} className={styles.Link} to={link.path}>
@@ -53,9 +52,6 @@ const Footer = () => {
               ))}
             </Group>
             <Stack className={styles.roundedStack}>
-              <Title order={3} className={styles.site}>
-                Site
-              </Title>
               <Stack>
                 <Text>{t("site.line1")}</Text>
                 <Text>{t("site.line2")}</Text>

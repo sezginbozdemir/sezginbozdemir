@@ -4,7 +4,8 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn } from "react-icons/fa6";
 import LinkButton from "@/components/ui/link-button";
 import raw from "@/lib/data/about.json";
-import sez from "@/assets/images/sez.png";
+//@ts-ignore
+import sez from "@/assets/images/sez.png?w=400&h=500&format=webp";
 import { useTranslation } from "react-i18next";
 import { SkillsSection } from "./skills-section";
 import { AboutData, Section } from "../types";
@@ -52,7 +53,12 @@ const AboutContent = () => {
       </Stack>
       <Box style={{ zIndex: "1000" }} className={styles.imgBox}>
         <Box className={styles.imgOuter}>
-          <Image src={sez} alt="fullstack dev" className={styles.img} />
+          <Image
+            fetchPriority="high"
+            src={sez}
+            alt="fullstack dev"
+            className={styles.img}
+          />
         </Box>
       </Box>
     </Group>

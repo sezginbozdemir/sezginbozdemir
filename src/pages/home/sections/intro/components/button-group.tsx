@@ -36,6 +36,7 @@ const ButtonGroup: React.FC<Props> = ({ hidden }) => {
         h={55}
         variant="filled"
         radius="xl"
+        aria-label="Download resume"
       >
         <DownloadIcon color="var(--black)" size={20} />
       </Button>

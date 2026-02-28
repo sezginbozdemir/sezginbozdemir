@@ -1,7 +1,7 @@
 import { Box, Group } from "@mantine/core";
 import styles from "./styles.module.css";
-import { Link } from "react-router-dom";
 import { BsArrowUpRight } from "react-icons/bs";
+import { Anchor } from "@mantine/core";
 
 interface Props {
   url: string;
@@ -14,9 +14,9 @@ const LinkButton: React.FC<Props> = ({ url, icon: Icon }) => {
       <Box className={styles.gitBox}>
         <Icon color="var(--white)" size={28} />
       </Box>
-      <Link target="_blank" to={url} className={styles.linkBox}>
+      <Anchor target="_blank" href={url} className={styles.linkBox}>
         <BsArrowUpRight color="var(--black)" size={25} />
-      </Link>
+      </Anchor>
     </Group>
   );
 };

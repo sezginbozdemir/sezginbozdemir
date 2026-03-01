@@ -7,6 +7,7 @@ import {
   TbBrandVite,
   TbBrandFramerMotion,
 } from "react-icons/tb";
+import { IoLogoElectron } from "react-icons/io5";
 import {
   SiRedux,
   SiNextdotjs,
@@ -42,11 +43,14 @@ import {
   SiShadcnui,
   SiRemix,
   SiJavascript,
+  SiSqlite,
 } from "react-icons/si";
 import { FaSass, FaShopify, FaYarn, FaBootstrap, FaMap } from "react-icons/fa6";
 import { FaNodeJs, FaMailBulk } from "react-icons/fa";
 
 export const icons: Record<string, React.ElementType> = {
+  sqlite: SiSqlite,
+  electron: IoLogoElectron,
   shopify: FaShopify,
   medusa: SiMedusa,
   api: TbApi,

@@ -1,4 +1,4 @@
-import { Group, Text, Box, Title, Container } from "@mantine/core";
+import { Group, Text, Box, Title } from "@mantine/core";
 import { useScrollToTop } from "../../lib/hooks/useScrollToTop";
 import styles from "./styles.module.css";
 import { ChangeEvent, FormEvent, useState } from "react";
@@ -67,7 +67,7 @@ const Contact = () => {
       });
   };
   return (
-    <Container size="xl" h="100%" w="100%">
+    <>
       <Group className={styles.container} mt={100}>
         <Text className={styles.title}>
           <span>{t("contact.title")}</span>
@@ -105,7 +105,7 @@ const Contact = () => {
           </form>
         </Box>
       </Group>
-    </Container>
+    </>
   );
 };
 

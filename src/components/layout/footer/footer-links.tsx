@@ -1,4 +1,4 @@
-import { Group, Title } from "@mantine/core";
+import { Group } from "@mantine/core";
 import styles from "./footer.module.css";
 import { icons, socialIcons } from "@/components/icons";
 import IconButton from "@/components/ui/icon-button";
@@ -15,32 +15,32 @@ const FooterLinks = () => {
   const linkData = [
     {
       name: "Github",
-      icon: <GhIcon size={18} color="var(--white)" />,
+      icon: GhIcon,
       link: GH_URL,
     },
     {
       name: "LinkedIn",
-      icon: <LinkIcon size={18} color="var(--white)" />,
+      icon: LinkIcon,
       link: LI_URL,
     },
     {
       name: "Email",
-      icon: <EmailIcon size={18} color="var(--white)" />,
+      icon: EmailIcon,
       link: `mailto:${MAIL}`,
     },
     {
       name: "Instagram",
-      icon: <IgIcon size={18} color="var(--white)" />,
+      icon: IgIcon,
       link: IG_URL,
     },
     {
       name: "Facebook",
-      icon: <FbIcon size={18} color="var(--white)" />,
+      icon: FbIcon,
       link: FB_URL,
     },
     {
       name: "Resume",
-      icon: <DownloadIcon size={18} color="var(--white)" />,
+      icon: DownloadIcon,
       link: "/cv.pdf",
     },
   ];
@@ -54,12 +54,12 @@ const FooterLinks = () => {
       mt={50}
     >
       {linkData.map((link, index) => (
-        <IconButton key={index} href={link.link}>
-          <Title order={5} className={styles.LinkText}>
-            {link.icon}
-            {link.name}
-          </Title>
-        </IconButton>
+        <IconButton
+          label={link.name}
+          icon={link.icon}
+          key={index}
+          href={link.link}
+        />
       ))}
     </Group>
   );

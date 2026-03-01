@@ -11,3 +11,11 @@
     box-shadow: none;
   }
 }
+.Text {
+  font-weight: 300;
+  color: var(--light-gray);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

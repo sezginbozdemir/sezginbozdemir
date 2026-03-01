@@ -68,14 +68,6 @@
   color: var(--light-gray);
   font-weight: 450;
 }
-.LinkText {
-  font-weight: 300;
-  color: var(--light-gray);
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
 .full {
   flex: 4;
 }

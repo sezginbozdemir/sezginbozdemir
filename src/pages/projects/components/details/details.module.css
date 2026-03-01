@@ -10,7 +10,8 @@
 .tile {
   border: 1px solid var(--dark-gray);
   border-radius: 100px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1rem;
+  font-size: 15px;
 }
 .description {
   color: var(--light-gray);
@@ -32,15 +33,24 @@
   font-weight: 400;
   margin: 0 0.5rem;
 }
-.modalContainer {
+.modalInner {
   padding: 0;
   background-color: var(--black);
   z-index: 1200;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .modalContent {
-  max-height: 90vh;
-  overflow: hidden;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--black);
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 }
 .modalHeader {
   padding: 0 5rem;
@@ -48,6 +58,11 @@
   @media (max-width: 768px) {
     padding: 0 0;
   }
+}
+.modalBody {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--black);
 }
 .modalClose {
   color: var(--white);

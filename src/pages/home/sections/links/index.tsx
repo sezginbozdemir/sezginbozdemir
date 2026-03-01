@@ -1,4 +1,4 @@
-import { Group, Title } from "@mantine/core";
+import { Group } from "@mantine/core";
 import styles from "./links.module.css";
 import IconButton from "@/components/ui/icon-button";
 import { FB_URL, GH_URL, IG_URL, LI_URL, MAIL } from "@/lib/constants";
@@ -26,29 +26,18 @@ const LinksSection = () => {
     <Group className={styles.mainGroup} justify="space-around" mb={100} mt={50}>
       <Group>
         {links.x.map(({ href, Icon, name }) => (
-          <IconButton href={href}>
-            <Title order={5} className={styles.Text}>
-              <Icon size={18} color="var(--white)" />
-              {name}
-            </Title>
-          </IconButton>
+          <IconButton label={name} icon={Icon} href={href} />
         ))}
       </Group>
-      <IconButton href={links.y.href}>
-        <Title order={5} className={styles.Text}>
-          <links.y.Icon size={18} color="var(--white)" />
-          {links.y.name}
-        </Title>
-      </IconButton>
+      <IconButton
+        label={links.y.name}
+        icon={links.y.Icon}
+        href={links.y.href}
+      />
 
       <Group>
         {links.z.map(({ href, Icon, name }) => (
-          <IconButton href={href}>
-            <Title order={5} className={styles.Text}>
-              <Icon size={18} color="var(--white)" />
-              {name}
-            </Title>
-          </IconButton>
+          <IconButton label={name} icon={Icon} href={href} />
         ))}
       </Group>
     </Group>

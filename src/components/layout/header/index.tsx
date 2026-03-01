@@ -1,6 +1,5 @@
 import {
   Box,
-  Container,
   Group,
   Stack,
   Title,
@@ -54,69 +53,64 @@ const Header = () => {
   };
   return (
     <>
-      <Container size="xl" h="100%" w="100%">
-        <Group style={{ position: "relative" }} mt={25} justify="space-between">
-          <Box className={styles.float} />
-          <Link to="/">
-            {!mobile && (
-              <Stack className={styles.stack} gap={0}>
-                <Title className={styles.stackTitle} order={3}>
-                  Sezgin
-                </Title>
-                <Title className={styles.stackTitle} order={3}>
-                  Bozdemir
-                </Title>
-              </Stack>
-            )}
-            {mobile && (
-              <Text c="var(--white)" size="25px">
-                sez.dev
-              </Text>
-            )}
-          </Link>
+      <Group style={{ position: "relative" }} mt={25} justify="space-between">
+        <Box className={styles.float} />
+        <Link to="/">
           {!mobile && (
-            <Group style={{ zIndex: 1000 }} justify="space-between">
-              {links.map((link) => (
-                <Link key={link.label} to={link.to}>
-                  <Title className={styles.Title} order={5}>
-                    {link.label}
-                  </Title>
-                </Link>
-              ))}
-            </Group>
-          )}
-          {!mobile && (
-            <Stack style={{ zIndex: "1000" }} gap={0}>
-              {languages.map((lang) => (
-                <Title
-                  key={lang.code}
-                  className={styles.Title}
-                  order={3}
-                  onClick={() => changeLanguage(lang.code)}
-                  style={{
-                    textDecoration:
-                      currentLang === lang.code ? "underline" : "none",
-                  }}
-                >
-                  {lang.label}
-                </Title>
-              ))}
+            <Stack className={styles.stack} gap={0}>
+              <Title className={styles.stackTitle} order={3}>
+                Sezgin
+              </Title>
+              <Title className={styles.stackTitle} order={3}>
+                Bozdemir
+              </Title>
             </Stack>
           )}
           {mobile && (
-            <div
-              onClick={toggleMenu}
-              style={{ cursor: "pointer", zIndex: 2000 }}
-            >
-              {menuOpen ? (
-                <FiX color="var(--white)" size={28} />
-              ) : (
-                <FiMenu color="var(--white)" size={28} />
-              )}
-            </div>
+            <Text c="var(--white)" size="25px">
+              sez.dev
+            </Text>
           )}
-        </Group>
-      </Container>
+        </Link>
+        {!mobile && (
+          <Group style={{ zIndex: 1000 }} justify="space-between">
+            {links.map((link) => (
+              <Link key={link.label} to={link.to}>
+                <Title className={styles.Title} order={5}>
+                  {link.label}
+                </Title>
+              </Link>
+            ))}
+          </Group>
+        )}
+        {!mobile && (
+          <Stack style={{ zIndex: "1000" }} gap={0}>
+            {languages.map((lang) => (
+              <Title
+                key={lang.code}
+                className={styles.Title}
+                order={3}
+                onClick={() => changeLanguage(lang.code)}
+                style={{
+                  textDecoration:
+                    currentLang === lang.code ? "underline" : "none",
+                }}
+              >
+                {lang.label}
+              </Title>
+            ))}
+          </Stack>
+        )}
+        {mobile && (
+          <div onClick={toggleMenu} style={{ cursor: "pointer", zIndex: 2000 }}>
+            {menuOpen ? (
+              <FiX color="var(--white)" size={28} />
+            ) : (
+              <FiMenu color="var(--white)" size={28} />
+            )}
+          </div>
+        )}
+      </Group>
       <Transition
         mounted={Boolean(menuOpen && mobile)}
         transition="slide-down"

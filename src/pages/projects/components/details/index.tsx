@@ -1,4 +1,4 @@
-import { Box, Button, Group, Stack, Text, Title, Modal } from "@mantine/core";
+import { Box, Button, Group, Stack, Text, Title } from "@mantine/core";
 import styles from "./details.module.css";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { icons } from "@/components/icons";
@@ -8,14 +8,13 @@ import { useState } from "react";
 import { useMediaQuery } from "@mantine/hooks";
 import { FiLink } from "react-icons/fi";
 import { Project } from "../..";
-import ImageSlider from "@/components/ui/image-slider";
+import Lightbox from "@/components/ui/lightbox";
 
 interface DetailsProps {
   index: number;
   project: Project;
 }
 const Details: React.FC<DetailsProps> = ({ project, index }) => {
-  const TRANSITION_DURATION = 200;
   const [opened, setOpened] = useState(false);
   const isMobile = useMediaQuery("(max-width: 1024px)");
 
@@ -74,24 +73,7 @@ const Details: React.FC<DetailsProps> = ({ project, index }) => {
           </Button>
         </Group>
       </Stack>
-      <Modal
-        transitionProps={{ duration: TRANSITION_DURATION }}
-        withCloseButton={true}
-        opened={opened}
-        onClose={() => setOpened(false)}
-        size="2xl"
-        padding={0}
-        classNames={{
-          body: styles.modalBody,
-          inner: styles.modalInner,
-          content: styles.modalContent,
-          header: styles.modalHeader,
-          close: styles.modalClose,
-        }}
-        centered
-      >
-        <ImageSlider images={project.images} />
-      </Modal>
+      <Lightbox setOpened={setOpened} opened={opened} images={project.images} />
     </>
   );
 };

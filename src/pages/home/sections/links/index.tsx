@@ -14,7 +14,7 @@ const links = {
     { href: GH_URL, Icon: GhIcon, name: "Github" },
     { href: LI_URL, Icon: LinkedinIcon, name: "Linkedin" },
   ],
-  y: { href: MAIL, Icon: EmailIcon, name: "Email" },
+  y: { href: `mailto:${MAIL}`, Icon: EmailIcon, name: "Email" },
   z: [
     { href: IG_URL, Icon: IgIcon, name: "Instagram" },
     { href: FB_URL, Icon: FbIcon, name: "Facebook" },

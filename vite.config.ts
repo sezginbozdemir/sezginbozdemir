@@ -3,21 +3,19 @@ import react from "@vitejs/plugin-react";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { imagetools } from "vite-imagetools";
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    imagetools(),
-    ViteImageOptimizer({
-      png: { quality: 80 },
-      jpeg: { quality: 75 },
-      jpg: { quality: 75 },
-      webp: { lossless: false, quality: 75 },
-      avif: { lossless: false, quality: 60 },
-      includePublic: true,
-      logStats: true,
-    }),
-  ],
+  plugins: [react(), imagetools(), ViteImageOptimizer({
+    png: { quality: 80 },
+    jpeg: { quality: 75 },
+    jpg: { quality: 75 },
+    webp: { lossless: false, quality: 75 },
+    avif: { lossless: false, quality: 60 },
+    includePublic: true,
+    logStats: true,
+  }), cloudflare()],
   resolve: {
     alias: {
       "@": "/src",

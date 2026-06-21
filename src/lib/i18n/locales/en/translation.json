@@ -1,0 +1,50 @@
+{
+  "intro": {
+    "part1": "Building projects with",
+    "part2": "clean, readable code",
+    "part3": "and a",
+    "part4": "tidy structure.",
+    "part5": "Reusability and maintainability matter to me, and I like keeping things well-organized so new features and updates stay simple."
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "breadcrumb": ".../About me",
+    "line1_start": "Hello, I'm Sezgin, a",
+    "line1_italic": "full-stack developer",
+    "line1_end": "with",
+    "line2_start": "over",
+    "line2_italic": "5 years",
+    "line2_end": "of experience based in Romania.",
+    "line3_start": "Some of my",
+    "line3_italic": "favourite technologies, topics or tools",
+    "line3_end": "that I worked with"
+  },
+
+  "site": {
+    "line1": "✓ Available for work",
+    "line2": "Based in Bucharest/Romania",
+    "line3": "sezdev@proton.me © 2026"
+  },
+  "projects": {
+    "breadcrumb": ".../Projects"
+  },
+  "contact": {
+    "title": ".../Contact me",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "Your email",
+    "subject": "Subject",
+    "subjectPlaceholder": "Subject",
+    "message": "Message",
+    "messagePlaceholder": "Your message",
+    "submitButton": "Submit",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "Failed to send message. Please try again.",
+    "validationError": "Please fill in all required fields."
+  }
+}

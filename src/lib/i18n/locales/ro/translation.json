@@ -1,0 +1,50 @@
+{
+  "intro": {
+    "part1": "Construiesc proiecte cu",
+    "part2": "cod curat, ușor de citit,",
+    "part3": "și o",
+    "part4": "structură bine organizată.",
+    "part5": "Reutilizarea și mentenabilitatea sunt importante pentru mine și îmi place să țin totul bine pus la punct, ca funcționalitățile noi și actualizările să fie ușor de adăugat."
+  },
+  "nav": {
+    "about": "Despre",
+    "projects": "Proiecte",
+    "contact": "Contact"
+  },
+
+  "about": {
+    "breadcrumb": ".../Despre mine",
+    "line1_start": "Salut, sunt Sezgin, un",
+    "line1_italic": "dezvoltator full-stack",
+    "line1_end": "cu",
+    "line2_start": "peste",
+    "line2_italic": "5 ani",
+    "line2_end": "de experiență în România.",
+    "line3_start": "Unele dintre ale mele",
+    "line3_italic": "tehnologii, subiecte sau unelte preferate",
+    "line3_end": "cu care am lucrat"
+  },
+  "site": {
+    "line1": "✓ Disponibil pentru colaborări",
+    "line2": "București, România",
+    "line3": "sezdev@proton.me © 2026"
+  },
+  "projects": {
+    "breadcrumb": ".../Proiecte"
+  },
+  "contact": {
+    "title": ".../Contactează-mă",
+    "name": "Nume",
+    "namePlaceholder": "Numele tău",
+    "email": "Email",
+    "emailPlaceholder": "Adresa ta de email",
+    "subject": "Subiect",
+    "subjectPlaceholder": "Subiect",
+    "message": "Mesaj",
+    "messagePlaceholder": "Mesajul tău",
+    "submitButton": "Trimite",
+    "successMessage": "Mesaj trimis cu succes!",
+    "errorMessage": "Nu s-a putut trimite mesajul. Te rugăm să încerci din nou.",
+    "validationError": "Te rog completează toate câmpurile obligatorii."
+  }
+}

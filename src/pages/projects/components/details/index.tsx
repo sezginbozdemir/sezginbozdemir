@@ -1,28 +1,23 @@
-import { Box, Button, Group, Stack, Text, Title, Modal } from "@mantine/core";
+import { Box, Button, Group, Stack, Text, Title } from "@mantine/core";
 import styles from "./details.module.css";
-import LinkButton from "@/shared/components/link-button";
 import { TbBrandGithubFilled } from "react-icons/tb";
-import { icons } from "@/shared/icons";
+import { icons } from "@/components/icons";
+import LinkButton from "@/components/ui/link-button";
 import { IoImages } from "react-icons/io5";
-import { Image } from "@mantine/core";
-import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useState } from "react";
 import { useMediaQuery } from "@mantine/hooks";
 import { FiLink } from "react-icons/fi";
 import { Project } from "../..";
+import Lightbox from "@/components/ui/lightbox";
 
 interface DetailsProps {
   index: number;
   project: Project;
 }
 const Details: React.FC<DetailsProps> = ({ project, index }) => {
-  const TRANSITION_DURATION = 200;
   const [opened, setOpened] = useState(false);
-  const [embla, setEmbla] = useState<Embla | null>(null);
   const isMobile = useMediaQuery("(max-width: 1024px)");
 
-  useAnimationOffsetEffect(embla, TRANSITION_DURATION);
   return (
     <>
       <Stack
@@ -78,51 +73,7 @@ const Details: React.FC<DetailsProps> = ({ project, index }) => {
           </Button>
         </Group>
       </Stack>
-      <Modal
-        transitionProps={{ duration: TRANSITION_DURATION }}
-        withCloseButton={true}
-        opened={opened}
-        onClose={() => setOpened(false)}
-        size="2xl"
-        padding={0}
-        classNames={{
-          body: styles.modalContainer,
-          inner: styles.modalContainer,
-          content: styles.modalContent,
-          header: styles.modalHeader,
-          close: styles.modalClose,
-        }}
-        centered
-      >
-        <Carousel
-          getEmblaApi={setEmbla}
-          classNames={{
-            root: styles.carouselRoot,
-            slide: styles.carouselSlide,
-            container: styles.carouselContainer,
-            control: styles.carouselControl,
-            controls: styles.carouselControls,
-          }}
-          nextControlIcon={<BsChevronRight size={46} />}
-          previousControlIcon={<BsChevronLeft size={46} />}
-          height="100%"
-          slideSize="100%"
-          loop
-          align="center"
-        >
-          {project.images.map((image, index) => (
-            <Carousel.Slide key={index}>
-              <Image
-                src={image}
-                height="100%"
-                width="100%"
-                fit="contain"
-                alt="Project image"
-              />
-            </Carousel.Slide>
-          ))}
-        </Carousel>
-      </Modal>
+      <Lightbox setOpened={setOpened} opened={opened} images={project.images} />
     </>
   );
 };

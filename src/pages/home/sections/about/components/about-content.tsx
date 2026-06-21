@@ -2,8 +2,8 @@ import { Box, Group, Image, Stack, Title } from "@mantine/core";
 import styles from "../about.module.css";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLinkedinIn } from "react-icons/fa6";
-import raw from "../about.json";
-import LinkButton from "@/shared/components/link-button";
+import LinkButton from "@/components/ui/link-button";
+import raw from "@/lib/data/about.json";
 import sez from "@/assets/images/sez.png";
 import { useTranslation } from "react-i18next";
 import { SkillsSection } from "./skills-section";
@@ -52,7 +52,12 @@ const AboutContent = () => {
       </Stack>
       <Box style={{ zIndex: "1000" }} className={styles.imgBox}>
         <Box className={styles.imgOuter}>
-          <Image src={sez} alt="fullstack dev" className={styles.img} />
+          <Image
+            fetchPriority="high"
+            src={sez}
+            alt="fullstack dev"
+            className={styles.img}
+          />
         </Box>
       </Box>
     </Group>

@@ -10,7 +10,8 @@
 .tile {
   border: 1px solid var(--dark-gray);
   border-radius: 100px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1rem;
+  font-size: 15px;
 }
 .description {
   color: var(--light-gray);
@@ -31,31 +32,6 @@
 .buttonTitle {
   font-weight: 400;
   margin: 0 0.5rem;
-}
-.modalContainer {
-  padding: 0;
-  background-color: var(--black);
-  z-index: 1200;
-}
-
-.modalContent {
-  max-height: 90vh;
-  overflow: hidden;
-}
-.modalHeader {
-  padding: 0 5rem;
-  background-color: var(--black);
-  @media (max-width: 768px) {
-    padding: 0 0;
-  }
-}
-.modalClose {
-  color: var(--white);
-  width: 3rem;
-  height: 3rem;
-  &:hover {
-    background-color: transparent;
-  }
 }
 
 .carouselRoot {

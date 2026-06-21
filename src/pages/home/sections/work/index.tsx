@@ -13,10 +13,10 @@ const WorkSection = () => {
       const lang = i18n.language;
 
       if (lang === "ro") {
-        const workDataRo = await import("./work-ro.json");
+        const workDataRo = await import("@/lib/data/work-ro.json");
         setWorkData(workDataRo.default);
       } else {
-        const workDataEn = await import("./work-en.json");
+        const workDataEn = await import("@/lib/data/work-en.json");
         setWorkData(workDataEn.default);
       }
     };

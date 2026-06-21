@@ -1,0 +1,18 @@
+.inputField {
+  margin-bottom: 20px;
+}
+
+.input {
+  border: 1px solid var(--light-gray);
+  background-color: transparent;
+  border-radius: 20px;
+  height: 50px;
+  color: var(--white);
+}
+.inputArea {
+  border: 1px solid var(--light-gray);
+  height: 6rem;
+  background-color: transparent;
+  border-radius: 20px;
+  color: var(--white);
+}

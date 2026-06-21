@@ -1,7 +1,7 @@
 import { Group, Stack, Title } from "@mantine/core";
 import styles from "../about.module.css";
-import { icons } from "@/shared/icons";
 import { Tab, TabVariant } from "../types";
+import { icons } from "@/components/icons";
 
 interface Params {
   tab: Tab;

@@ -1,0 +1,338 @@
+{
+  "projects": [
+    {
+      "name": "Vessa Hospital – Medical Services Portal",
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "JWT", "id": "jwt" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Nodemailer", "id": "nodemailer" },
+        { "name": "Swiper", "id": "swiper" }
+      ],
+      "descriptions": [
+        "A Next.js app with Google Maps, JWT authentication, email integration using Nodemailer, and a clean, responsive design using TailwindCSS.",
+        "Featuring Leaflet for interactive maps, React Time Picker for scheduling, and a smooth user experience enhanced by Swiper."
+      ],
+      "url": "https://github.com/sezginbozdemir/vessa",
+      "desktopImage": "/projects/vessa/desktop.png",
+      "mobileImage": "/projects/vessa/mobile.png",
+      "images": [
+        "/projects/vessa/1.png",
+        "/projects/vessa/2.png",
+        "/projects/vessa/3.png",
+        "/projects/vessa/4.png",
+        "/projects/vessa/5.png",
+        "/projects/vessa/6.png"
+      ],
+      "link": "https://vessahospital.ro",
+      "type": "Fullstack"
+    },
+    {
+      "name": "Guided Tours – Admin Managed Tour Platform",
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Node.js", "id": "node" },
+        { "name": "Prisma", "id": "prisma" }
+      ],
+      "descriptions": [
+        "A full-stack web application powered by Node.js, React, and Prisma. It allows admins to create and manage guided tours through a powerful custom dashboard.",
+        "The platform offers a seamless customer experience on the frontend while handling backend operations like tour creation, updates, and user management efficiently."
+      ],
+      "url": "https://github.com/sezginbozdemir/guided-tours",
+      "desktopImage": "/projects/guided/guided.png",
+      "mobileImage": "/projects/guided/guided-mobile.png",
+      "images": [
+        "/projects/guided/1.png",
+        "/projects/guided/2.png",
+        "/projects/guided/3.png",
+        "/projects/guided/4.png"
+      ],
+      "link": "",
+      "type": "Fullstack"
+    },
+    {
+      "name": "Inventory Solutions – Full-Stack Inventory Dashboard",
+      "tiles": [
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Node.js", "id": "nodejs" },
+        { "name": "Express", "id": "express" },
+        { "name": "MongoDB", "id": "mongodb" }
+      ],
+      "descriptions": [
+        "A full-stack application with a Vite-powered React frontend using Mantine and TailwindCSS, and an Express backend with MongoDB.",
+        "featuring a Vite-based React frontend styled with Mantine and TailwindCSS. The backend is powered by Express and MongoDB, ensuring a scalable and efficient architecture for seamless user interactions.",
+        "The app can be accessed using 'admin' as both the username and password for authentication."
+      ],
+      "url": "https://github.com/sezginbozdemir/inventory-solutions",
+      "desktopImage": "/projects/stock/desktop.png",
+      "mobileImage": "/projects/stock/mobile.png",
+      "images": [
+        "/projects/stock/1.png",
+        "/projects/stock/2.png",
+        "/projects/stock/3.png",
+        "/projects/stock/4.png"
+      ],
+      "link": "",
+      "type": "Fullstack"
+    },
+    {
+      "name": "Snoya – Custom Headless Shopify Storefront",
+      "tiles": [
+        { "name": "Remix", "id": "remix" },
+        { "name": "React", "id": "react" },
+        { "name": "Shadcn", "id": "shadcn" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Zustand", "id": "zustand" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Shopify", "id": "shopify" }
+      ],
+      "descriptions": [
+        "Snoya is a fully customizable, headless e-commerce application built with Remix, React, and TypeScript. It uses Shopify as the backend for customers product, cart, and checkout management, while the frontend is entirely custom and deployed independently (requires external hosting outside Shopify).",
+        "Integrated with Shopify's classic customer account system. It supports email/password-based login, registration, and password recovery using Shopify's legacy authentication system.",
+        "Most visual elements like homepage banners, section texts, and featured collections are dynamically configurable via Shopify Admin using metafields or custom fields, enabling content updates without code changes.",
+        "State management is handled with Zustand for optimistic immediate cart updates, styles are built with TailwindCSS and Shadcn UI components, and layout is fully responsive for both mobile and desktop."
+      ],
+      "url": "https://github.com/sezginbozdemir/headless-shopify-remix",
+      "desktopImage": "/projects/snoya/desktop.png",
+      "mobileImage": "/projects/snoya/mobile.png",
+      "images": [
+        "/projects/snoya/1.png",
+        "/projects/snoya/2.png",
+        "/projects/snoya/3.png",
+        "/projects/snoya/4.png",
+        "/projects/snoya/5.png",
+        "/projects/snoya/6.png",
+        "/projects/snoya/7.png",
+        "/projects/snoya/8.png",
+        "/projects/snoya/9.png"
+      ],
+      "link": "https://snoya.sezdev.com",
+      "type": "Shopify"
+    },
+    {
+      "name": "Econos – High-Performance Customer Web App",
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "PostCSS", "id": "postcss" }
+      ],
+      "descriptions": [
+        "A high-performance customer-facing web application built with Next.js and React, styled using Mantine and PostCSS for a modern and seamless user experience.",
+        "A fully responsive customer app with smooth CSS animations for an engaging user experience."
+      ],
+      "url": "https://github.com/sezginbozdemir/econos",
+      "desktopImage": "/projects/econos/econos.png",
+      "mobileImage": "/projects/econos/econos-mobile.png",
+      "images": [
+        "/projects/econos/1.png",
+        "/projects/econos/2.png",
+        "/projects/econos/3.png",
+        "/projects/econos/4.png",
+        "/projects/econos/5.png",
+        "/projects/econos/6.png",
+        "/projects/econos/7.png"
+      ],
+      "link": "https://econos.sezdev.com",
+      "type": "Frontend"
+    },
+    {
+      "name": "Nova Lens – E-commerce Monorepo with Medusa",
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "Medusa Js", "id": "medusa" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Turborepo", "id": "turborepo" }
+      ],
+      "descriptions": [
+        "A monorepo e-commerce application built with Medusa, Next.js, and TailwindCSS, featuring a customizable dashboard, storefront, and server, along with a wishlist plugin for enhanced user experience.",
+        "Powered by Turborepo for efficient development, it includes a wishlist plugin to enhance shopping experiences and streamline customer engagement."
+      ],
+      "url": "https://github.com/sezginbozdemir/nova-lens",
+      "desktopImage": "/projects/nova/desktop.png",
+      "mobileImage": "/projects/nova/mobile.png",
+      "images": [
+        "/projects/nova/1.png",
+        "/projects/nova/2.png",
+        "/projects/nova/3.png",
+        "/projects/nova/4.png",
+        "/projects/nova/5.png",
+        "/projects/nova/6.png",
+        "/projects/nova/7.png",
+        "/projects/nova/8.png"
+      ],
+      "link": "",
+      "type": "Frontend"
+    },
+    {
+      "name": "Pixado – Fast Animated UI Showcase",
+      "tiles": [
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Bootstrap", "id": "bootstrap" },
+        { "name": "Framer Motion", "id": "framer-motion" }
+      ],
+      "descriptions": [
+        "A fast and responsive Vite-powered React app using TypeScript, Bootstrap, and Framer Motion for smooth animations.",
+        "Pixado is a high-performance Vite-based React application, leveraging TypeScript for type safety, Bootstrap for styling, and Framer Motion for seamless animations. Designed for speed and responsiveness, it delivers a modern and dynamic user experience."
+      ],
+      "url": "https://github.com/sezginbozdemir/pixado",
+      "desktopImage": "/projects/pixado/pixado-desktop.png",
+      "mobileImage": "/projects/pixado/pixado-mobile.png",
+      "images": [
+        "/projects/pixado/1.png",
+        "/projects/pixado/2.png",
+        "/projects/pixado/3.png",
+        "/projects/pixado/4.png",
+        "/projects/pixado/5.png"
+      ],
+      "link": "https://pixado.sezdev.com",
+      "type": "Frontend"
+    },
+    {
+      "name": "VPS – Lightweight React App",
+      "tiles": [
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "PostCSS", "id": "postcss" }
+      ],
+      "descriptions": [
+        "A Vite-powered React app using Mantine for UI components and styled with PostCSS and TypeScript for improved development experience.",
+        "Optimized for fast builds, it offers a modern and responsive interface with hooks from Mantine and smooth routing via React Router."
+      ],
+      "url": "https://github.com/sezginbozdemir/vps",
+      "desktopImage": "/projects/vps/vps-desktop.png",
+      "mobileImage": "/projects/vps/vps-mobile.png",
+      "images": [
+        "/projects/vps/1.png",
+        "/projects/vps/2.png",
+        "/projects/vps/3.png"
+      ],
+      "link": "https://vps.sezdev.com",
+      "type": "Frontend"
+    },
+    {
+      "name": "Medical Dispencer UI",
+      "tiles": [
+        { "name": "Javascript", "id": "javascript" },
+        { "name": "CSS", "id": "css" }
+      ],
+      "descriptions": [
+        "A lightweight user interface designed for a medical dispenser running on a single board computer. The project focuses on a clear and accessible layout with large touch-friendly controls. Optimized for low resource usage and reliable offline operation."
+      ],
+      "url": "https://github.com/sezginbozdemir/medical-dispencer-ui",
+      "desktopImage": "/projects/dispencer-ui/desktop.png",
+      "mobileImage": "/projects/dispencer-ui/mobile.png",
+      "images": [
+        "/projects/dispencer-ui/desktop.png",
+        "/projects/dispencer-ui/mobile.png"
+      ],
+      "link": "",
+      "type": "Frontend"
+    },
+    {
+      "name": "Product Comparison – CSV-Based Affiliate Catalog",
+      "tiles": [
+        { "name": "React", "id": "react" },
+        { "name": "Bootstrap", "id": "bootstrap" }
+      ],
+      "descriptions": [
+        "A React-powered affiliate site that fetches products from CSV files and provides an intuitive product comparison experience.",
+        "Product Comparison is an affiliate website built with React and Bootstrap, designed to fetch product data from CSV files using PapaParse. It enables users to compare products efficiently, offering a seamless shopping experience with interactive filtering and sorting tools."
+      ],
+      "url": "https://github.com/sezginbozdemir/product-comparison",
+      "desktopImage": "/projects/comparison/desktop.png",
+      "mobileImage": "/projects/comparison/mobile.png",
+      "images": [
+        "/projects/comparison/1.png",
+        "/projects/comparison/2.png",
+        "/projects/comparison/3.png",
+        "/projects/comparison/4.png"
+      ],
+      "link": "https://comparison.sezdev.com",
+      "type": "Frontend"
+    },
+    {
+      "name": "Fullstack Monorepo Starter — Turborepo boilerplate with Next.js, Express and shared packages",
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "Express", "id": "express" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Turborepo", "id": "turborepo" },
+        { "name": "Drizzle ORM", "id": "drizzle" },
+        { "name": "Shadcn UI", "id": "shadcn" }
+      ],
+      "descriptions": [
+        "A structured, scalable monorepo starter managed with Turborepo, combining a Next.js frontend and an Express backend under a single repository with shared packages and unified tooling.",
+        "Shared packages include a Drizzle-based database layer, a mailer package for email templating and sending, and a shared utilities package — all reusable across both apps without duplication.",
+        "The ui package provides reusable Shadcn UI components, the typescript-config package centralizes tsconfig base settings, and vitest-config provides a shared test setup across the monorepo.",
+        "Designed as a clean, production-ready starting point for full-stack projects that need modular architecture, shared code, and modern tooling out of the box."
+      ],
+      "url": "https://github.com/sezginbozdemir/turborepo-nextjs-drizzle-supabase-shadcn",
+      "desktopImage": "/projects/monorepo/desktop.png",
+      "mobileImage": "/projects/monorepo/mobile.png",
+      "images": ["/projects/monorepo/1.png", "/projects/monorepo/2.png"],
+      "type": "Boilerplate"
+    },
+    {
+      "name": "Electron with React Template — Local-first desktop app boilerplate with SQLite",
+      "tiles": [
+        { "name": "Electron", "id": "electron" },
+        { "name": "React", "id": "react" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Vite", "id": "vite" },
+        { "name": "Drizzle ORM", "id": "drizzle" },
+        { "name": "better-sqlite3", "id": "sqlite" },
+        { "name": "TanStack", "id": "tanstack" }
+      ],
+      "descriptions": [
+        "A local-first desktop app starter built with Electron, React, and Vite — featuring fast HMR during development and a fully bundled SQLite database powered by better-sqlite3.",
+        "Database interactions are handled with Drizzle ORM and drizzle-zod for type-safe, schema-validated queries, with CLI scripts included for migrations, generation, and pushing schema changes.",
+        "The frontend stack includes TailwindCSS, Shadcn UI components, and TanStack Router, Query, and Table for routing, data fetching, and tabular data.",
+        "Ships with electron-updater for auto-updates, electron-log for logging, and electron-builder for packaging cross-platform releases — making it a production-ready starting point for desktop apps."
+      ],
+      "url": "https://github.com/sezginbozdemir/electron-vite-react-bettersql3",
+      "desktopImage": "/projects/electron/desktop.png",
+      "mobileImage": "/projects/electron/mobile.png",
+      "images": [
+        "/projects/electron/desktop.png",
+        "/projects/electron/1.png",
+        "/projects/electron/2.png"
+      ],
+      "type": "Boilerplate"
+    },
+    {
+      "name": "Image Audit — CLI tool for scanning, compressing, and organizing images",
+      "tiles": [
+        { "name": "Node.js", "id": "node" },
+        { "name": "TypeScript", "id": "typescript" }
+      ],
+      "descriptions": [
+        "A command-line tool to audit and organize image folders, detecting oversized images, duplicate file names, and visually similar images using perceptual hashing (pHash).",
+        "The scan command flags images exceeding a configurable file size threshold, groups findings by name duplicates, capture day, or visual similarity, and generates detailed reports without modifying any files.",
+        "The compress command uses ImageMagick under the hood to reduce image sizes, with tunable JPEG quality and PNG compression levels, and supports a dry-run mode to preview changes before applying them.",
+        "The move command organizes images into grouped directories based on audit results — by duplicate name, creation day, or visual similarity — making it easy to clean up and structure large image collections."
+      ],
+      "url": "https://github.com/sezginbozdemir/image-audit-cli",
+      "desktopImage": "/projects/img-audit/img-audit.png",
+      "mobileImage": "/projects/img-audit/2.png",
+      "images": [
+        "/projects/img-audit/1.png",
+        "/projects/img-audit/img-audit.png"
+      ],
+      "type": "CLI"
+    }
+  ]
+}

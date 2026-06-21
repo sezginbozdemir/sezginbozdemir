@@ -1,0 +1,338 @@
+{
+  "projects": [
+    {
+      "name": "Vessa Hospital",
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "JWT", "id": "jwt" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Nodemailer", "id": "nodemailer" },
+        { "name": "Swiper", "id": "swiper" }
+      ],
+      "descriptions": [
+        "O aplicație Next.js cu Google Maps, autentificare JWT, integrare prin Nodemailer pentru emailuri și un design curat și responsiv folosind TailwindCSS.",
+        "Cu Leaflet pentru hărți interactive, React Time Picker pentru programări și o experiență fluidă a utilizatorului îmbunătățită prin Swiper."
+      ],
+      "url": "https://github.com/sezginbozdemir/vessa",
+      "desktopImage": "/projects/vessa/desktop.png",
+      "mobileImage": "/projects/vessa/mobile.png",
+      "images": [
+        "/projects/vessa/1.png",
+        "/projects/vessa/2.png",
+        "/projects/vessa/3.png",
+        "/projects/vessa/4.png",
+        "/projects/vessa/5.png",
+        "/projects/vessa/6.png"
+      ],
+      "link": "https://vessahospital.ro",
+      "type": "Fullstack"
+    },
+    {
+      "name": "Guided Tours",
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Node.js", "id": "node" },
+        { "name": "Prisma", "id": "prisma" }
+      ],
+      "descriptions": [
+        "O aplicație web full-stack construită cu Node.js, React și Prisma. Permite administratorilor să creeze și să gestioneze tururi ghidate printr-un panou de control personalizat și puternic.",
+        "Platforma oferă o experiență fluidă pentru utilizatori pe partea de frontend, gestionând eficient operațiuni de backend precum crearea, actualizarea tururilor și administrarea utilizatorilor."
+      ],
+      "url": "https://github.com/sezginbozdemir/guided-tours",
+      "desktopImage": "/projects/guided/guided.png",
+      "mobileImage": "/projects/guided/guided-mobile.png",
+      "images": [
+        "/projects/guided/1.png",
+        "/projects/guided/2.png",
+        "/projects/guided/3.png",
+        "/projects/guided/4.png"
+      ],
+      "link": "",
+      "type": "Fullstack"
+    },
+    {
+      "name": "Inventory Solutions",
+      "tiles": [
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Node.js", "id": "nodejs" },
+        { "name": "Express", "id": "express" },
+        { "name": "MongoDB", "id": "mongodb" }
+      ],
+      "descriptions": [
+        "O aplicație full-stack cu un frontend React bazat pe Vite folosind Mantine și TailwindCSS și un backend Express cu MongoDB.",
+        "Având un frontend React bazat pe Vite stilizat cu Mantine și TailwindCSS, backend-ul este alimentat de Express și MongoDB, asigurând o arhitectură scalabilă și eficientă pentru interacțiuni fără întreruperi ale utilizatorilor.",
+        "Aplicația poate fi accesată folosind 'admin' ca utilizator și parolă pentru autentificare."
+      ],
+      "url": "https://github.com/sezginbozdemir/inventory-solutions",
+      "desktopImage": "/projects/stock/desktop.png",
+      "mobileImage": "/projects/stock/mobile.png",
+      "images": [
+        "/projects/stock/1.png",
+        "/projects/stock/2.png",
+        "/projects/stock/3.png",
+        "/projects/stock/4.png"
+      ],
+      "link": "",
+      "type": "Fullstack"
+    },
+    {
+      "name": "Snoya – Headless Shopify Storefront",
+      "tiles": [
+        { "name": "Remix", "id": "remix" },
+        { "name": "React", "id": "react" },
+        { "name": "Shadcn", "id": "shadcn" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Zustand", "id": "zustand" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "Shopify", "id": "shopify" }
+      ],
+      "descriptions": [
+        "Snoya este o aplicație e-commerce headless complet personalizabilă, construită cu Remix, React și TypeScript. Folosește Shopify ca backend pentru gestionarea clienților, produselor, coșului și checkout-ului, în timp ce frontend-ul este complet personalizat și găzduit independent (necesită hosting extern în afara Shopify).",
+        "Este integrată cu sistemul clasic de conturi de client Shopify. Suportă autentificare cu email și parolă, înregistrare și recuperare a parolei folosind sistemul vechi de autentificare Shopify.",
+        "Majoritatea elementelor vizuale precum bannerele de pe homepage, textele secțiunilor și colecțiile evidențiate pot fi configurate din Shopify Admin prin metafield-uri sau câmpuri personalizate, permițând actualizări de conținut fără modificări în cod.",
+        "Managementul stării este realizat cu Zustand pentru actualizări optimiste și imediate ale coșului, stilizarea este făcută cu TailwindCSS și componente Shadcn UI, iar layout-ul este complet responsiv, atât pentru mobil, cât și pentru desktop."
+      ],
+      "url": "https://github.com/sezginbozdemir/headless-shopify-remix",
+      "desktopImage": "/projects/snoya/desktop.png",
+      "mobileImage": "/projects/snoya/mobile.png",
+      "images": [
+        "/projects/snoya/1.png",
+        "/projects/snoya/2.png",
+        "/projects/snoya/3.png",
+        "/projects/snoya/4.png",
+        "/projects/snoya/5.png",
+        "/projects/snoya/6.png",
+        "/projects/snoya/7.png",
+        "/projects/snoya/8.png",
+        "/projects/snoya/9.png"
+      ],
+      "link": "https://snoya.sezdev.com",
+      "type": "Shopify"
+    },
+    {
+      "name": "Econos",
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "PostCSS", "id": "postcss" }
+      ],
+      "descriptions": [
+        "O aplicație web de înaltă performanță destinată clienților, construită cu Next.js și React, stilizată folosind Mantine și PostCSS pentru o experiență modernă și fluidă a utilizatorului.",
+        "O aplicație complet responsivă pentru clienți, cu animații CSS fluide pentru o experiență captivantă a utilizatorului."
+      ],
+      "url": "https://github.com/sezginbozdemir/econos",
+      "desktopImage": "/projects/econos/econos.png",
+      "mobileImage": "/projects/econos/econos-mobile.png",
+      "images": [
+        "/projects/econos/1.png",
+        "/projects/econos/2.png",
+        "/projects/econos/3.png",
+        "/projects/econos/4.png",
+        "/projects/econos/5.png",
+        "/projects/econos/6.png",
+        "/projects/econos/7.png"
+      ],
+      "link": "https://econos.sezdev.com",
+      "type": "Frontend"
+    },
+    {
+      "name": "Nova Lens",
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "Medusa Js", "id": "medusa" },
+        { "name": "TailwindCSS", "id": "tailwind" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Turborepo", "id": "turborepo" }
+      ],
+      "descriptions": [
+        "O aplicație monorepo de comerț electronic construită cu Medusa, Next.js și TailwindCSS, având un dashboard personalizabil, un magazin online și un server, împreună cu un plugin de listă de dorințe pentru o experiență îmbunătățită a utilizatorului.",
+        "Alimentată de Turborepo pentru dezvoltare eficientă, include un plugin de listă de dorințe pentru a îmbunătăți experiențele de cumpărături și a eficientiza interacțiunile cu clienții."
+      ],
+      "url": "https://github.com/sezginbozdemir/nova-lens",
+      "desktopImage": "/projects/nova/desktop.png",
+      "mobileImage": "/projects/nova/mobile.png",
+      "images": [
+        "/projects/nova/1.png",
+        "/projects/nova/2.png",
+        "/projects/nova/3.png",
+        "/projects/nova/4.png",
+        "/projects/nova/5.png",
+        "/projects/nova/6.png",
+        "/projects/nova/7.png",
+        "/projects/nova/8.png"
+      ],
+      "link": "",
+      "type": "Frontend"
+    },
+    {
+      "name": "Pixado",
+      "tiles": [
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Bootstrap", "id": "bootstrap" },
+        { "name": "Framer Motion", "id": "framer-motion" }
+      ],
+      "descriptions": [
+        "O aplicație rapidă și responsivă bazată pe Vite și React, folosind TypeScript, Bootstrap și Framer Motion pentru animații fluide.",
+        "Pixado este o aplicație Vite de înaltă performanță bazată pe React, care utilizează TypeScript pentru siguranța tipurilor, Bootstrap pentru stilizare și Framer Motion pentru animații fluide. Proiectată pentru viteză și răspuns rapid, oferă o experiență modernă și dinamică a utilizatorului."
+      ],
+      "url": "https://github.com/sezginbozdemir/pixado",
+      "desktopImage": "/projects/pixado/pixado-desktop.png",
+      "mobileImage": "/projects/pixado/pixado-mobile.png",
+      "images": [
+        "/projects/pixado/1.png",
+        "/projects/pixado/2.png",
+        "/projects/pixado/3.png",
+        "/projects/pixado/4.png",
+        "/projects/pixado/5.png"
+      ],
+      "link": "https://pixado.sezdev.com",
+      "type": "Frontend"
+    },
+    {
+      "name": "Vps",
+      "tiles": [
+        { "name": "Vite", "id": "vite" },
+        { "name": "React", "id": "react" },
+        { "name": "Mantine", "id": "mantine" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "PostCSS", "id": "postcss" }
+      ],
+      "descriptions": [
+        "O aplicație React alimentată de Vite, folosind Mantine pentru componentele UI și stilizată cu PostCSS și TypeScript pentru o experiență de dezvoltare îmbunătățită.",
+        "Optimizată pentru construiri rapide, oferă o interfață modernă și responsivă cu hooks din Mantine și rutare fluidă prin React Router."
+      ],
+      "url": "https://github.com/sezginbozdemir/vps",
+      "desktopImage": "/projects/vps/vps-desktop.png",
+      "mobileImage": "/projects/vps/vps-mobile.png",
+      "images": [
+        "/projects/vps/1.png",
+        "/projects/vps/2.png",
+        "/projects/vps/3.png"
+      ],
+      "link": "https://vps.sezdev.com",
+      "type": "Frontend"
+    },
+    {
+      "name": "Medical Dispencer UI",
+      "tiles": [
+        { "name": "Javascript", "id": "javascript" },
+        { "name": "CSS", "id": "css" }
+      ],
+      "descriptions": [
+        "Interfata usoara si accesibila pentru un distribuitor medical care ruleaza pe un single board computer. Proiectul include un design clar cu butoane mari usor de folosit pe touch. Optimizata pentru consum redus de resurse si functionare fiabila chiar si offline."
+      ],
+      "url": "https://github.com/sezginbozdemir/medical-dispencer-ui",
+      "desktopImage": "/projects/dispencer-ui/desktop.png",
+      "mobileImage": "/projects/dispencer-ui/mobile.png",
+      "images": [
+        "/projects/dispencer-ui/desktop.png",
+        "/projects/dispencer-ui/desktop.png"
+      ],
+      "link": "",
+      "type": "Frontend"
+    },
+    {
+      "name": "Product Comparison",
+      "tiles": [
+        { "name": "React", "id": "react" },
+        { "name": "Bootstrap", "id": "react-bootstrap" }
+      ],
+      "descriptions": [
+        "Un site afiliat alimentat de React care preia produsele din fișiere CSV și oferă o experiență intuitivă de comparare a produselor.",
+        "Product Comparison este un site afiliat construit cu React și Bootstrap, proiectat pentru a prelua datele produselor din fișiere CSV folosind PapaParse. Permite utilizatorilor să compare produsele eficient, oferind o experiență de cumpărături fluidă cu instrumente interactive de filtrare și sortare."
+      ],
+      "url": "https://github.com/sezginbozdemir/product-comparison",
+      "desktopImage": "/projects/comparison/desktop.png",
+      "mobileImage": "/projects/comparison/mobile.png",
+      "images": [
+        "/projects/comparison/1.png",
+        "/projects/comparison/2.png",
+        "/projects/comparison/3.png",
+        "/projects/comparison/4.png"
+      ],
+      "link": "https://comparison.sezdev.com",
+      "type": "Frontend"
+    },
+    {
+      "name": "Starter monorepo Fullstack — boilerplate Turborepo cu Next.js, Express și pachete partajate",
+      "tiles": [
+        { "name": "Next.js", "id": "next" },
+        { "name": "Express", "id": "express" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Turborepo", "id": "turborepo" },
+        { "name": "Drizzle ORM", "id": "drizzle" },
+        { "name": "Shadcn UI", "id": "shadcn" }
+      ],
+      "descriptions": [
+        "Un starter monorepo structurat și scalabil, administrat cu Turborepo, care combină un frontend Next.js și un backend Express într-un singur repository, cu pachete partajate și tooling unificat.",
+        "Pachetele partajate includ un layer de bază de date bazat pe Drizzle, un pachet de mailer pentru templating și trimitere de email-uri, plus un pachet de utilitare comune — toate reutilizabile în ambele aplicații fără duplicare.",
+        "Pachetul ui oferă componente Shadcn UI reutilizabile, pachetul typescript-config centralizează setările de bază pentru tsconfig, iar vitest-config oferă un setup de testare comun în întreg monorepo-ul.",
+        "Gândit ca un punct de pornire curat și production-ready pentru proiecte full-stack care au nevoie de o arhitectură modulară, cod partajat și tooling modern din start."
+      ],
+      "url": "https://github.com/sezginbozdemir/turborepo-nextjs-drizzle-supabase-shadcn",
+      "desktopImage": "/projects/monorepo/desktop.png",
+      "mobileImage": "/projects/monorepo/mobile.png",
+      "images": ["/projects/monorepo/1.png", "/projects/monorepo/2.png"],
+      "type": "Boilerplate"
+    },
+    {
+      "name": "Template Electron cu React — boilerplate pentru aplicații desktop local-first cu SQLite",
+      "tiles": [
+        { "name": "Electron", "id": "electron" },
+        { "name": "React", "id": "react" },
+        { "name": "TypeScript", "id": "typescript" },
+        { "name": "Vite", "id": "vite" },
+        { "name": "Drizzle ORM", "id": "drizzle" },
+        { "name": "better-sqlite3", "id": "sqlite" },
+        { "name": "TanStack", "id": "tanstack" }
+      ],
+      "descriptions": [
+        "Un starter pentru aplicații desktop local-first construit cu Electron, React și Vite — cu HMR rapid în development și o bază de date SQLite complet inclusă (bundled) folosind better-sqlite3.",
+        "Interacțiunile cu baza de date sunt gestionate cu Drizzle ORM și drizzle-zod pentru query-uri type-safe, validate pe schema, iar proiectul include scripturi CLI pentru migrations, generation și aplicarea modificărilor de schemă.",
+        "Stack-ul de frontend include TailwindCSS, componente Shadcn UI și TanStack Router, Query și Table pentru routing, data fetching și afișare tabelară a datelor.",
+        "Vine cu electron-updater pentru auto-updates, electron-log pentru logging și electron-builder pentru packaging de release-uri cross-platform — fiind un punct de pornire production-ready pentru aplicații desktop."
+      ],
+      "url": "https://github.com/sezginbozdemir/electron-vite-react-bettersql3",
+      "desktopImage": "/projects/electron/desktop.png",
+      "mobileImage": "/projects/electron/mobile.png",
+      "images": [
+        "/projects/electron/desktop.png",
+        "/projects/electron/1.png",
+        "/projects/electron/2.png"
+      ],
+      "type": "Boilerplate"
+    },
+    {
+      "name": "Image Audit — tool CLI pentru scanarea, compresia și organizarea imaginilor",
+      "tiles": [
+        { "name": "Node.js", "id": "node" },
+        { "name": "TypeScript", "id": "typescript" }
+      ],
+      "descriptions": [
+        "Un tool de linie de comandă pentru auditarea și organizarea folderelor cu imagini, care detectează imagini supradimensionate, nume de fișiere duplicate și imagini vizual similare folosind perceptual hashing (pHash).",
+        "Comanda scan semnalează imagini care depășesc un prag configurabil de dimensiune a fișierului, grupează rezultatele după duplicate de nume, ziua capturii sau similaritate vizuală și generează rapoarte detaliate fără să modifice fișierele.",
+        "Comanda compress folosește ImageMagick sub capotă pentru a reduce dimensiunile imaginilor, cu setări ajustabile pentru calitatea JPEG și nivelurile de compresie PNG, și suportă un mod dry-run pentru a previzualiza schimbările înainte de aplicare.",
+        "Comanda move organizează imaginile în directoare grupate pe baza rezultatelor auditului — după nume duplicat, ziua creării sau similaritate vizuală — făcând ușoară curățarea și structurarea colecțiilor mari de imagini."
+      ],
+      "url": "https://github.com/sezginbozdemir/image-audit-cli",
+      "desktopImage": "/projects/img-audit/img-audit.png",
+      "mobileImage": "/projects/img-audit/2.png",
+      "images": [
+        "/projects/img-audit/1.png",
+        "/projects/img-audit/img-audit.png"
+      ],
+      "type": "CLI"
+    }
+  ]
+}
